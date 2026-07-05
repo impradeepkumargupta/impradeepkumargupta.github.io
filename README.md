@@ -43,7 +43,7 @@ open index.html   # or just double-click the file
 
 ## Deployment
 
-Hosted with [GitHub Pages](https://pages.github.com/), deployed from the `main` branch.
+Hosted with [GitHub Pages](https://pages.github.com/), deployed from the `master` branch.
 
 ## Contact
 
