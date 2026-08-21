@@ -151,13 +151,16 @@
   }
 
   /* -------- Skills detail -------- */
-  .skill-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .skill-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-items:start;}
   @media (max-width:820px){ .skill-grid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:560px){ .skill-grid{grid-template-columns:1fr;} }
-  .skill-card{border:1px solid var(--border-light); border-radius:var(--radius); padding:20px;}
-  .skill-card h3{font-size:13.5px; font-weight:700; color:var(--text); margin-bottom:12px;}
-  .taglist{display:flex; flex-wrap:wrap; gap:8px;}
-  .taglist span{font-size:12.5px; color:var(--text-secondary); background:var(--bg-alt); border-radius:6px; padding:5px 10px;}
+  .skill-card{border:1px solid var(--border-light); border-radius:var(--radius); padding:22px 24px;}
+  .skill-card h3{font-size:12.5px; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.04em; margin-bottom:16px;}
+  .skill-list{list-style:none; display:flex; flex-direction:column; gap:10px;}
+  .skill-list li{font-size:14px; color:var(--text); padding-left:16px; position:relative; line-height:1.4;}
+  .skill-list li::before{content:""; position:absolute; left:0; top:7px; width:5px; height:5px; border-radius:50%; background:var(--blue);}
+  .skill-list li b{font-weight:500;}
+  .skill-list li span.note{color:var(--text-faint); font-size:12.5px;}
 
   /* -------- Certifications -------- */
   .cert-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
@@ -354,6 +357,25 @@
         <li>Implemented centralized monitoring and logging with ELK Stack, Grafana, and Zabbix for proactive incident detection.</li>
       </ul>
     </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <div class="job-title">Project — GKE Platform Engineering</div>
+          <div class="job-co">Personal project · <a href="https://github.com/impradeepkumargupta/gke-platform-engineering" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </div>
+        <div class="job-time">In Progress</div>
+      </div>
+      <ul>
+        <li>Building a reference Terraform module set for provisioning production-style GKE clusters — private networking, node pools, Workload Identity, and autoscaling.</li>
+        <li>Setting up GitOps-based deployment workflows with GitHub Actions to make releases repeatable, auditable, and rollback-safe.</li>
+        <li>Documenting cluster architecture, IAM boundaries, and observability hooks so the repo doubles as a platform-engineering reference, not just a working cluster.</li>
+      </ul>
+      <div class="job-stack">
+        <span class="chip">Terraform</span><span class="chip">GKE</span><span class="chip">Kubernetes</span>
+        <span class="chip">GitHub Actions</span><span class="chip">GitOps</span><span class="chip">IAM</span>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS DETAIL -->
@@ -365,41 +387,55 @@
     <div class="skill-grid">
       <div class="skill-card">
         <h3>Cloud &amp; Platform</h3>
-        <div class="taglist">
-          <span>Google Cloud Platform</span><span>GKE</span><span>Compute Engine</span>
-          <span>Cloud SQL</span><span>Pub/Sub</span><span>BigQuery</span><span>Cloud Functions</span>
-          <span>Cloud Monitoring</span><span>IAM</span><span>AWS (familiar)</span>
-        </div>
+        <ul class="skill-list">
+          <li>Google Cloud Platform — GKE, Compute Engine, Cloud SQL</li>
+          <li>Pub/Sub, BigQuery, Cloud Functions</li>
+          <li>Cloud Monitoring, IAM</li>
+          <li>AWS <span class="note">(familiar)</span></li>
+        </ul>
       </div>
       <div class="skill-card">
         <h3>Containers &amp; Orchestration</h3>
-        <div class="taglist">
-          <span>Kubernetes</span><span>Docker</span><span>Docker Swarm</span><span>Docker Compose</span><span>Helm</span>
-        </div>
+        <ul class="skill-list">
+          <li>Kubernetes</li>
+          <li>Docker, Docker Swarm, Docker Compose</li>
+          <li>Helm</li>
+        </ul>
       </div>
       <div class="skill-card">
         <h3>IaC &amp; Automation</h3>
-        <div class="taglist">
-          <span>Terraform</span><span>Ansible</span><span>GitOps</span><span>Python</span><span>Bash / Shell</span>
-        </div>
+        <ul class="skill-list">
+          <li>Terraform</li>
+          <li>Ansible</li>
+          <li>GitOps</li>
+          <li>Python, Bash / Shell</li>
+        </ul>
       </div>
       <div class="skill-card">
         <h3>CI / CD</h3>
-        <div class="taglist">
-          <span>GitHub</span><span>Git</span><span>GitOps</span>
-        </div>
+        <ul class="skill-list">
+          <li>GitHub, GitHub Actions</li>
+          <li>Git</li>
+          <li>GitOps workflows</li>
+        </ul>
       </div>
       <div class="skill-card">
         <h3>Observability</h3>
-        <div class="taglist">
-          <span>ELK Stack</span><span>Grafana</span><span>Zabbix</span><span>Cloud Monitoring &amp; Logging</span>
-        </div>
+        <ul class="skill-list">
+          <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+          <li>Grafana</li>
+          <li>Zabbix</li>
+          <li>Cloud Monitoring &amp; Logging</li>
+        </ul>
       </div>
       <div class="skill-card">
         <h3>Systems &amp; Security</h3>
-        <div class="taglist">
-          <span>Linux (RHEL)</span><span>Networking</span><span>DevSecOps</span><span>MySQL</span>
-        </div>
+        <ul class="skill-list">
+          <li>Linux (RHEL) administration</li>
+          <li>Networking</li>
+          <li>DevSecOps practices</li>
+          <li>MySQL</li>
+        </ul>
       </div>
     </div>
   </section>
