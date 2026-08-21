@@ -1,35 +1,41 @@
 # Pradeep Kumar Gupta — Portfolio
 
-Personal portfolio website — Cloud & DevOps Engineer.
+Personal portfolio site for Pradeep Kumar Gupta, Cloud & DevOps Engineer.
 
 🔗 **Live site:** [impradeepkumargupta.github.io](https://impradeepkumargupta.github.io)
 
 ## About
 
-This is my personal portfolio, built to showcase my background, experience, and skills as a Cloud & DevOps Engineer working with GCP, Kubernetes, Terraform, and CI/CD pipelines.
+A single-page portfolio built to showcase background, experience, and technical skills across Google Cloud, Kubernetes, Terraform, and CI/CD — presented in a clean, minimal, Google-inspired design.
 
 ## Built with
 
 - HTML5
 - CSS3 (custom, no framework)
-- Vanilla JavaScript
-- Google Fonts — Plus Jakarta Sans, Inter, JetBrains Mono
+- Google Fonts — Roboto, Roboto Mono
+
+No build tooling, package manager, or JavaScript framework is required.
 
 ## Features
 
-- Responsive layout, mobile to desktop
-- Interactive 3D tilt effect on the profile card
-- Smooth scroll navigation with active-section highlighting
-- Scroll-triggered reveal animations
-- Respects `prefers-reduced-motion` for accessibility
+- Responsive layout, from mobile to desktop
+- Sticky navigation bar with anchor links to each section
+- Embedded profile photo (no external image hosting or broken links)
+- Downloadable PDF resume, linked from the header and contact section
+- Smooth in-page scrolling to anchored sections
 
 ## Sections
 
-- About
-- Experience
-- Skills
-- Education
-- Contact
+- Hero — name, role, summary, and quick links
+- Tech stack — the cloud/platform engineering toolchain used day to day
+- About — profile summary and quick facts
+- Experience — current role and project work
+- Technical skills — categorized skill reference
+- Certifications — credentials with issue dates and verification links
+- Education — academic background
+- Achievements — highlights and recognitions
+- Availability — relocation and sponsorship status
+- Contact — email, LinkedIn, GitHub, and social links
 
 ## Running locally
 
@@ -40,6 +46,8 @@ git clone https://github.com/impradeepkumargupta/impradeepkumargupta.github.io.g
 cd impradeepkumargupta.github.io
 open index.html   # or just double-click the file
 ```
+
+To keep the "Download Resume" button working, keep `Pradeep_Kumar_Gupta_Resume.pdf` in the same directory as `index.html`.
 
 ## Deployment
 
