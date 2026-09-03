@@ -7,10 +7,9 @@
 
 I am a certified **Google Cloud Professional Cloud Architect** and **DevOps Platform Engineer** passionate about building robust, secure, and cost-efficient cloud infrastructures. With hands-on experience designing production Kubernetes platforms, implementing Infrastructure as Code (IaC), and modernizing legacy workloads, I bridge software engineering with scalable cloud operations.
 
-- 📍 **Status & Mobility:** Open to worldwide relocation and visa sponsorship (UK Skilled Worker, EU Blue Card, Canada LMIA/Express Entry, Australia TSS, US H-1B / J-1).
+- 📍 **Status & Mobility:** Open to worldwide relocation and visa sponsorship.
 - 🗣️ **English Proficiency:** IELTS Overall Score **7.0** (CEFR C1 — Proficient User).
-- 🎓 **Education:** Bachelor of Technology (B.Tech) in Computer Science & Engineering (**8.62 CGPA**), COMPEX Full Merit Scholar.
-- 💡 **Philosophy:** Automate relentlessly, design for failure, maintain strict least-privilege security, and empower engineering teams with self-service developer platforms.
+- 🎓 **Education:** Bachelor of Technology (B.Tech) in Computer Science & Engineering.
 
 ---
 
@@ -54,8 +53,6 @@ This repository powers the live portfolio site at [impradeepkumargupta.github.io
 - **Dynamic GitHub Widget:** Fetches real-time profile stats, contribution metrics, and featured repositories via GitHub's REST API.
 - **Interactive Contact Form:** Serverless message dispatch directly to inbox using AJAX and FormSubmit.
 - **Micro-Interactions:** Subtle hover lifts, glowing card accents, and breathing pulse indicators on key call-to-actions.
-- **Zero Cost & Zero Backend:** 100% static HTML5, CSS3, and vanilla TypeScript/JavaScript ready for instant deployment on GitHub Pages.
-
 ---
 
 ## 🚀 Running Locally
@@ -70,11 +67,7 @@ git clone https://github.com/impradeepkumargupta/impradeepkumargupta.github.io.g
 cd impradeepkumargupta.github.io
 
 # 3. Open in your default browser
-open index.html # On macOS
-# or
-xdg-open index.html # On Linux
-# or start a lightweight server:
-python3 -m http.server 3000
+open index.html
 ```
 
 ---
