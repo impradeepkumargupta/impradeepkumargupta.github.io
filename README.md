@@ -1,13 +1,6 @@
 # Pradeep Kumar Gupta — Cloud & DevOps Platform Engineer
 
-[![Website](https://img.shields.io/badge/Portfolio-impradeepkumargupta.github.io-1a73e8?style=flat-square&logo=google-chrome&logoColor=white)](https://impradeepkumargupta.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2Fimpradeepkumargupta-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/impradeepkumargupta)
-[![GitHub](https://img.shields.io/badge/GitHub-impradeepkumargupta-24292e?style=flat-square&logo=github&logoColor=white)](https://github.com/impradeepkumargupta)
-[![Email](https://img.shields.io/badge/Email-impradeepkumargupta%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:impradeepkumargupta@gmail.com)
-[![GCP Certified](https://img.shields.io/badge/GCP_Certified-Professional_Cloud_Architect-4285f4?style=flat-square&logo=google-cloud&logoColor=white)](https://google.accreditedbadges.com/)
-
 > **Platform & Cloud DevOps Engineer** specializing in architecting resilient Kubernetes environments (GKE), automated multi-environment infrastructure with Terraform, zero-downtime CI/CD deployment pipelines, and observability ecosystems.
-
 ---
 
 ## 👨‍💻 About Me
