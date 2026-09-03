@@ -1,0 +1,14 @@
+{
+  "name": "pradeep-kumar-gupta-portfolio",
+  "version": "1.0.0",
+  "description": "Pradeep Kumar Gupta — Cloud & DevOps Platform Engineer Portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static portfolio ready'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

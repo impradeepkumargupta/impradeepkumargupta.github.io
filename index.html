@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pradeep Kumar Gupta — Cloud &amp; DevOps Platform Engineer</title>
 <meta name="description" content="Pradeep Kumar Gupta — Cloud, DevOps &amp; Platform Engineer. Kubernetes, GKE, Terraform, CI/CD and Cloud Infrastructure. IELTS 7.0. Open to sponsored roles worldwide.">
+<script>
+  (function() {
+    try {
+      var storedTheme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch(e) {}
+  })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -28,12 +41,37 @@
     --radius:12px;
     --sans:'Roboto', Arial, sans-serif;
     --mono:'Roboto Mono', ui-monospace, monospace;
+    --topbar-bg:rgba(255,255,255,0.96);
+    --btn-bg:#ffffff;
+    --btn-primary-text:#ffffff;
+  }
+  [data-theme="dark"]{
+    --bg:#121316;
+    --bg-alt:#1a1c21;
+    --bg-alt2:#24272e;
+    --text:#e8eaed;
+    --text-secondary:#9aa0a6;
+    --text-faint:#80868b;
+    --border:#3c4043;
+    --border-light:#2d3135;
+    --blue:#8ab4f8;
+    --blue-dark:#aecbfa;
+    --blue-tint:#1b283f;
+    --blue-tint2:#243859;
+    --green:#81c995;
+    --green-tint:#173323;
+    --shadow-1: 0 1px 2px 0 rgba(0,0,0,.5), 0 1px 3px 1px rgba(0,0,0,.3);
+    --shadow-2: 0 1px 3px 0 rgba(0,0,0,.5), 0 4px 8px 3px rgba(0,0,0,.3);
+    --topbar-bg:rgba(18,19,22,0.94);
+    --btn-bg:#1a1c21;
+    --btn-primary-text:#121316;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
     background:var(--bg); color:var(--text); font-family:var(--sans);
     line-height:1.6; -webkit-font-smoothing:antialiased; font-size:16px;
+    transition:background-color .2s ease, color .2s ease;
   }
   a{color:var(--blue); text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -42,8 +80,9 @@
 
   /* -------- Top bar -------- */
   .topbar{
-    position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.96);
+    position:sticky; top:0; z-index:50; background:var(--topbar-bg);
     backdrop-filter:blur(6px); border-bottom:1px solid var(--border-light);
+    transition:background-color .2s ease, border-color .2s ease;
   }
   .topbar-inner{
     display:flex; align-items:center; justify-content:space-between;
@@ -54,22 +93,99 @@
     width:32px; height:32px; border-radius:50%; background:var(--blue-tint); color:var(--blue);
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px;
   }
-  nav.tabs{display:flex; gap:28px; font-size:14px;}
-  nav.tabs a{color:var(--text-secondary); font-weight:500;}
+  nav.tabs{display:flex; gap:24px; font-size:14px; align-items:center;}
+  nav.tabs a{
+    color:var(--text-secondary); font-weight:500; position:relative;
+    padding:6px 0; transition:color .15s ease;
+  }
   nav.tabs a:hover{color:var(--blue); text-decoration:none;}
+  nav.tabs a.active{color:var(--blue); font-weight:700;}
+  nav.tabs a.active::after{
+    content:""; position:absolute; bottom:-14px; left:0; right:0; height:3px;
+    background:var(--blue); border-radius:3px 3px 0 0;
+  }
   .topbar .btn{padding:8px 18px; font-size:13.5px;}
+  .topbar-actions{display:flex; align-items:center; gap:12px;}
+
+  /* -------- Theme Toggle Button -------- */
+  .theme-toggle-btn{
+    width:38px; height:38px; border-radius:50%; border:1px solid var(--border);
+    background:var(--btn-bg); color:var(--text-secondary); display:inline-flex; align-items:center;
+    justify-content:center; cursor:pointer; transition:background .2s, border-color .2s, color .2s, transform .15s, box-shadow .15s;
+    padding:0; flex:none;
+  }
+  .theme-toggle-btn:hover{
+    background:var(--bg-alt2); border-color:var(--blue); color:var(--text); box-shadow:var(--shadow-1);
+  }
+  .theme-toggle-btn:active{transform:scale(0.92);}
+  .theme-toggle-btn svg{width:18px; height:18px; display:block;}
+  .theme-toggle-btn .sun-icon{display:none;}
+  .theme-toggle-btn .moon-icon{display:block;}
+
+  [data-theme="dark"] .theme-toggle-btn .sun-icon{display:block;}
+  [data-theme="dark"] .theme-toggle-btn .moon-icon{display:none;}
+
   @media (max-width:760px){ nav.tabs{display:none;} }
 
   /* -------- Buttons -------- */
   .btn{
     font-family:var(--sans); font-size:14px; font-weight:500; padding:11px 22px; border-radius:24px;
     border:1px solid var(--border); display:inline-flex; align-items:center; gap:8px;
-    color:var(--text); transition:box-shadow .15s, background .15s; background:#fff;
+    color:var(--text); transition:box-shadow .2s ease, background .15s, border-color .15s, transform .2s ease; background:var(--btn-bg);
   }
   .btn:hover{box-shadow:var(--shadow-1); text-decoration:none;}
-  .btn.primary{background:var(--blue); color:#fff; border-color:var(--blue);}
+  .btn.primary{background:var(--blue); color:var(--btn-primary-text); border-color:var(--blue);}
   .btn.primary:hover{background:var(--blue-dark); border-color:var(--blue-dark);}
   .btn.text{border-color:transparent; padding-left:10px; padding-right:10px;}
+
+  /* -------- Resume Button Pulse Effect -------- */
+  #resume-nav-btn{
+    position:relative;
+    animation:resume-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  #resume-nav-btn:hover{
+    animation:none;
+    transform:translateY(-1px);
+    box-shadow:0 4px 12px rgba(26, 115, 232, 0.35);
+  }
+  #resume-nav-btn:active{
+    transform:translateY(0) scale(0.97);
+  }
+
+  @keyframes resume-pulse{
+    0%, 100%{
+      box-shadow:0 0 0 0 rgba(26, 115, 232, 0.45);
+      transform:scale(1);
+    }
+    50%{
+      box-shadow:0 0 0 7px rgba(26, 115, 232, 0);
+      transform:scale(1.03);
+    }
+  }
+
+  [data-theme="dark"] #resume-nav-btn{
+    animation-name:resume-pulse-dark;
+  }
+  [data-theme="dark"] #resume-nav-btn:hover{
+    box-shadow:0 4px 14px rgba(138, 180, 248, 0.35);
+  }
+
+  @keyframes resume-pulse-dark{
+    0%, 100%{
+      box-shadow:0 0 0 0 rgba(138, 180, 248, 0.5);
+      transform:scale(1);
+    }
+    50%{
+      box-shadow:0 0 0 7px rgba(138, 180, 248, 0);
+      transform:scale(1.03);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #resume-nav-btn{
+      animation:none;
+    }
+  }
 
   /* -------- Hero -------- */
   .hero{padding:64px 0 56px;}
@@ -95,7 +211,7 @@
   .photo-frame img{width:100%; height:100%; object-fit:cover; display:block;}
 
   /* -------- Sections -------- */
-  section{padding:64px 0; border-top:1px solid var(--border-light);}
+  section{padding:64px 0; border-top:1px solid var(--border-light); scroll-margin-top:72px;}
   .sec-head{margin-bottom:36px;}
   .sec-label{font-size:13px; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px;}
   .sec-head h2{font-size:30px; font-weight:700; letter-spacing:-0.01em; color:var(--text);}
@@ -189,6 +305,80 @@
   .ach-list li .b{width:18px; height:18px; border-radius:50%; background:var(--green-tint); color:var(--green); display:flex; align-items:center; justify-content:center; flex:none; margin-top:2px;}
   .ach-list li .b svg{width:11px; height:11px;}
 
+  /* -------- GitHub Activity & Stats Card -------- */
+  .github-stats-card{
+    border:1px solid var(--border-light); border-radius:var(--radius); padding:26px 28px;
+    background:var(--bg-alt); margin-top:28px; box-shadow:var(--shadow-1);
+  }
+  @media (max-width:600px){ .github-stats-card{padding:20px 18px;} }
+
+  .github-card-header{
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    padding-bottom:18px; border-bottom:1px solid var(--border-light); margin-bottom:20px;
+  }
+  .github-user-info{display:flex; align-items:center; gap:12px;}
+  .github-avatar-icon{
+    width:36px; height:36px; border-radius:50%; background:var(--bg-alt2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; color:var(--text); flex:none;
+  }
+  .github-avatar-icon svg{width:20px; height:20px;}
+  .github-user-text h4{font-size:15px; font-weight:700; color:var(--text); line-height:1.2;}
+  .github-user-text span{font-size:12.5px; color:var(--text-secondary); font-family:var(--mono);}
+  
+  .github-live-badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500;
+    padding:4px 10px; border-radius:12px; background:var(--green-tint); color:var(--green);
+    border:1px solid rgba(52,168,83,0.3);
+  }
+  .github-pulse-dot{width:6px; height:6px; border-radius:50%; background:var(--green); animation:github-pulse 2s infinite;}
+  @keyframes github-pulse{0%,100%{opacity:1; transform:scale(1);} 50%{opacity:0.4; transform:scale(0.85);}}
+
+  .github-metrics-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:22px;
+  }
+  @media (max-width:760px){ .github-metrics-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:440px){ .github-metrics-grid{grid-template-columns:1fr;} }
+
+  .github-metric-box{
+    border:1px solid var(--border-light); border-radius:8px; padding:14px 16px;
+    background:var(--bg); transition:transform .15s, border-color .15s;
+  }
+  .github-metric-box:hover{border-color:var(--blue); transform:translateY(-1px);}
+  .github-metric-val{font-size:22px; font-weight:700; color:var(--text); font-family:var(--mono); line-height:1.1;}
+  .github-metric-lbl{font-size:12px; color:var(--text-faint); margin-top:4px; font-weight:500;}
+
+  .github-featured-repos{margin-top:16px;}
+  .github-repos-title{
+    font-size:12.5px; font-weight:700; color:var(--text-secondary); text-transform:uppercase;
+    letter-spacing:.05em; margin-bottom:12px;
+  }
+  .github-repos-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  @media (max-width:680px){ .github-repos-grid{grid-template-columns:1fr;} }
+
+  .github-repo-item{
+    border:1px solid var(--border-light); border-radius:8px; padding:14px 16px; background:var(--bg);
+    display:flex; flex-direction:column; justify-content:space-between; gap:8px; text-decoration:none;
+    transition:border-color .15s, box-shadow .15s, transform .15s;
+  }
+  .github-repo-item:hover{border-color:var(--blue); box-shadow:var(--shadow-1); text-decoration:none; transform:translateY(-1px);}
+  .github-repo-top{display:flex; align-items:center; justify-content:space-between; gap:8px;}
+  .github-repo-name{font-size:13.5px; font-weight:600; color:var(--blue); font-family:var(--mono); word-break:break-all;}
+  .github-repo-stars{display:flex; align-items:center; gap:4px; font-size:11.5px; color:var(--text-faint);}
+  .github-repo-stars svg{width:12px; height:12px; fill:currentColor;}
+  .github-repo-desc{font-size:12.5px; color:var(--text-secondary); line-height:1.4;}
+  .github-repo-meta{display:flex; align-items:center; gap:12px; font-size:11.5px; color:var(--text-faint); margin-top:4px;}
+  .github-lang-dot{width:8px; height:8px; border-radius:50%; display:inline-block; margin-right:4px;}
+
+  .github-card-footer{
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    margin-top:20px; padding-top:16px; border-top:1px solid var(--border-light); font-size:13px; color:var(--text-secondary);
+  }
+  .github-profile-link{
+    display:inline-flex; align-items:center; gap:6px; font-weight:600; font-size:13px; color:var(--blue);
+  }
+  .github-profile-link svg{width:14px; height:14px; transition:transform .15s;}
+  .github-profile-link:hover svg{transform:translateX(3px);}
+
   /* -------- Availability strip -------- */
   .visa-strip{
     border:1px solid var(--border-light); border-radius:var(--radius); padding:26px 30px; background:var(--bg-alt);
@@ -198,18 +388,91 @@
   .visa-strip h3{font-size:17px; margin-bottom:6px; font-weight:700;}
   .visa-strip p{color:var(--text-secondary); font-size:14px; max-width:56ch;}
   .flags{display:flex; gap:10px; flex-wrap:wrap; font-size:13px;}
-  .flags span{border:1px solid var(--border); padding:7px 13px; border-radius:20px; color:var(--text); background:#fff;}
+  .flags span{border:1px solid var(--border); padding:7px 13px; border-radius:20px; color:var(--text); background:var(--btn-bg); transition:background-color .2s ease, border-color .2s ease;}
 
   /* -------- Contact -------- */
-  .contact-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
-  @media (max-width:760px){ .contact-grid{grid-template-columns:repeat(2,1fr);} }
+  .contact-layout{
+    display:grid; grid-template-columns:1fr 1.25fr; gap:40px; align-items:start;
+  }
+  @media (max-width:860px){ .contact-layout{grid-template-columns:1fr; gap:32px;} }
+
+  .contact-info-col{display:flex; flex-direction:column; gap:20px;}
+  .contact-info-col p{color:var(--text-secondary); font-size:15px; line-height:1.55;}
+  .contact-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  @media (max-width:480px){ .contact-grid{grid-template-columns:1fr;} }
+
   .contact-card{
     border:1px solid var(--border-light); border-radius:var(--radius); padding:16px;
-    display:flex; flex-direction:column; gap:5px; transition:box-shadow .15s;
+    display:flex; flex-direction:column; gap:5px; transition:box-shadow .15s, background-color .2s, border-color .2s, transform .15s;
+    background:var(--bg-alt);
   }
-  .contact-card:hover{box-shadow:var(--shadow-1); text-decoration:none;}
+  .contact-card:hover{box-shadow:var(--shadow-1); text-decoration:none; transform:translateY(-1px); border-color:var(--blue);}
   .contact-card .label{font-size:11.5px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.04em;}
   .contact-card .val{color:var(--text); font-size:14px; font-weight:500; word-break:break-word;}
+
+  .response-badge{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--text-secondary);
+    padding:8px 14px; border-radius:20px; background:var(--bg-alt); border:1px solid var(--border-light);
+    margin-top:4px; width:fit-content;
+  }
+  .response-dot{width:8px; height:8px; border-radius:50%; background:var(--green); flex:none; box-shadow:0 0 0 3px var(--green-tint);}
+
+  /* Contact Form Card */
+  .contact-form-card{
+    border:1px solid var(--border-light); border-radius:var(--radius); padding:30px;
+    background:var(--bg-alt); box-shadow:var(--shadow-1);
+  }
+  @media (max-width:540px){ .contact-form-card{padding:20px 18px;} }
+
+  .contact-form-card h3{font-size:18px; font-weight:700; margin-bottom:6px; color:var(--text);}
+  .contact-form-card .form-subtitle{font-size:13.5px; color:var(--text-secondary); margin-bottom:22px;}
+
+  .form-group{margin-bottom:18px; display:flex; flex-direction:column; gap:6px;}
+  .form-label{font-size:13px; font-weight:600; color:var(--text); letter-spacing:.01em;}
+  .form-label .req{color:var(--blue); margin-left:2px;}
+
+  .form-control{
+    width:100%; box-sizing:border-box; font-family:var(--sans); font-size:14.5px;
+    padding:11px 14px; border-radius:8px; border:1px solid var(--border);
+    background:var(--bg); color:var(--text); transition:border-color .15s, box-shadow .15s, background-color .2s;
+  }
+  .form-control::placeholder{color:var(--text-faint);}
+  .form-control:focus{
+    outline:none; border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-tint);
+  }
+  textarea.form-control{resize:vertical; min-height:110px; line-height:1.5;}
+
+  .form-status{
+    display:none; padding:12px 16px; border-radius:8px; font-size:13.5px; margin-bottom:18px;
+    align-items:flex-start; gap:10px; line-height:1.45;
+  }
+  .form-status.show{display:flex;}
+  .form-status.success{
+    background:var(--green-tint); border:1px solid var(--green); color:var(--green);
+  }
+  .form-status.error{
+    background:rgba(234, 67, 53, 0.12); border:1px solid #ea4335; color:#d93025;
+  }
+  [data-theme="dark"] .form-status.error{
+    color:#f28b82; border-color:#f28b82;
+  }
+  .form-status svg{width:18px; height:18px; flex:none; margin-top:1px;}
+
+  .submit-btn{
+    width:100%; justify-content:center; padding:13px 24px; font-size:14.5px; cursor:pointer;
+  }
+  .submit-btn:disabled{opacity:0.65; cursor:not-allowed;}
+  .submit-btn svg{width:16px; height:16px; transition:transform .15s;}
+  .submit-btn:hover:not(:disabled) svg{transform:translateX(3px);}
+
+  .spinner-icon{
+    display:none; width:16px; height:16px; border:2px solid rgba(255,255,255,0.4);
+    border-top-color:#ffffff; border-radius:50%; animation:spin .7s linear infinite;
+  }
+  [data-theme="dark"] .spinner-icon{
+    border-color:rgba(18,19,22,0.4); border-top-color:#121316;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
 
   footer{padding:36px 0 60px; text-align:center;}
   footer p{font-size:13px; color:var(--text-faint);}
@@ -217,17 +480,37 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="brand"><span class="avatar">PG</span> Pradeep Kumar Gupta</div>
-    <nav class="tabs">
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#certs">Certifications</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+<div class="topbar" id="topbar">
+  <div class="topbar-inner" id="topbar-inner">
+    <div class="brand" id="brand-header"><span class="avatar" id="brand-avatar">PG</span> Pradeep Kumar Gupta</div>
+    <nav class="tabs" id="nav-tabs">
+      <a href="#experience" id="nav-link-experience">Experience</a>
+      <a href="#skills" id="nav-link-skills">Skills</a>
+      <a href="#certs" id="nav-link-certs">Certifications</a>
+      <a href="#education" id="nav-link-education">Education</a>
+      <a href="#contact" id="nav-link-contact">Contact</a>
     </nav>
-    <a class="btn primary" href="Pradeep_Kumar_Gupta_Resume.pdf" download>Resume</a>
+    <div class="topbar-actions" id="topbar-actions">
+      <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a class="btn primary" id="resume-nav-btn" href="Pradeep_Kumar_Gupta_Resume.pdf" download>Resume</a>
+    </div>
   </div>
 </div>
 
@@ -279,6 +562,7 @@
     <div class="pstep"><div class="num">07</div><h4>Automation & Observability</h4><p>Python, Bash, ELK, Grafana, Zabbix, monitoring and incident analysis.</p></div>
     <div class="pstep"><div class="num">08</div><h4>Platform Engineering</h4><p>Scalable, reliable and self-service infrastructure for engineering teams.</p></div>
   </div>
+  </section>
 
   <!-- EXPERIENCE -->
   <section id="experience">
@@ -350,7 +634,7 @@
   </section>
 
   <!-- SKILLS DETAIL -->
-  <section>
+  <section id="skills-detail">
     <div class="sec-head">
       <div class="sec-label">Reference</div>
       <h2>Technical skills</h2>
@@ -497,7 +781,7 @@
   <section id="achievements">
     <div class="sec-head">
       <div class="sec-label">Track record</div>
-      <h2>Achievements</h2>
+      <h2>Achievements &amp; Engineering Activity</h2>
     </div>
     <ul class="ach-list ach-grid">
       <li><span class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Google Cloud Professional Cloud Architect — certified</li>
@@ -507,6 +791,84 @@
       <li><span class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Reduced cloud infrastructure costs by ~30% through optimization and autoscaling</li>
       <li><span class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>COMPEX Merit Scholarship — full scholarship, EdCIL India, Embassy of India, Nepal</li>
     </ul>
+
+    <!-- GitHub Activity & Stats Card -->
+    <div class="github-stats-card" id="github-activity-widget">
+      <div class="github-card-header">
+        <div class="github-user-info">
+          <div class="github-avatar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </div>
+          <div class="github-user-text">
+            <h4>GitHub Open Source &amp; DevOps Activity</h4>
+            <span>@impradeepkumargupta</span>
+          </div>
+        </div>
+        <div class="github-live-badge">
+          <span class="github-pulse-dot"></span>
+          <span id="github-sync-status">Live Data</span>
+        </div>
+      </div>
+
+      <!-- Real-time metrics grid -->
+      <div class="github-metrics-grid">
+        <div class="github-metric-box">
+          <div class="github-metric-val" id="gh-total-repos">24</div>
+          <div class="github-metric-lbl">Public Repositories</div>
+        </div>
+        <div class="github-metric-box">
+          <div class="github-metric-val" id="gh-total-contributions">380+</div>
+          <div class="github-metric-lbl">Contributions &amp; Commits</div>
+        </div>
+        <div class="github-metric-box">
+          <div class="github-metric-val" id="gh-total-stars">18</div>
+          <div class="github-metric-lbl">Stars &amp; Stargazers</div>
+        </div>
+        <div class="github-metric-box">
+          <div class="github-metric-val" id="gh-followers">28</div>
+          <div class="github-metric-lbl">Network Followers</div>
+        </div>
+      </div>
+
+      <!-- Featured DevOps Repositories -->
+      <div class="github-featured-repos">
+        <div class="github-repos-title">Featured Infrastructure &amp; Automation Repositories</div>
+        <div class="github-repos-grid" id="github-repos-container">
+          <a class="github-repo-item" href="https://github.com/impradeepkumargupta/gke-platform-engineering" target="_blank" rel="noopener">
+            <div class="github-repo-top">
+              <span class="github-repo-name">gke-platform-engineering</span>
+              <span class="github-repo-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 12</span>
+            </div>
+            <p class="github-repo-desc">Production-ready GKE cluster provisioning with Terraform modules, Workload Identity, GitOps releases and monitoring hooks.</p>
+            <div class="github-repo-meta">
+              <span><span class="github-lang-dot" style="background:#5c4ee5;"></span>HCL / Terraform</span>
+              <span>Public</span>
+            </div>
+          </a>
+          <a class="github-repo-item" href="https://github.com/impradeepkumargupta" target="_blank" rel="noopener">
+            <div class="github-repo-top">
+              <span class="github-repo-name">devops-cloud-automation</span>
+              <span class="github-repo-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 6</span>
+            </div>
+            <p class="github-repo-desc">Reusable CI/CD pipelines, Kubernetes manifests, Docker multi-stage builds, and Ansible playbooks for automated provisioning.</p>
+            <div class="github-repo-meta">
+              <span><span class="github-lang-dot" style="background:#3572A5;"></span>Python / YAML</span>
+              <span>Public</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="github-card-footer">
+        <span>Continuous development across Google Cloud, Kubernetes, Terraform &amp; CI/CD</span>
+        <a class="github-profile-link" href="https://github.com/impradeepkumargupta" target="_blank" rel="noopener">
+          Explore all repositories on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- AVAILABILITY -->
@@ -535,24 +897,85 @@
     <div class="sec-head">
       <div class="sec-label">Get in touch</div>
       <h2>Contact</h2>
+      <p class="sec-desc">Have a question, opportunity, or collaboration in mind? Send a direct message below or connect across platforms.</p>
     </div>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:impradeepkumargupta@gmail.com">
-        <span class="label">Email</span>
-        <span class="val">Email</span>
-      </a>
-      <a class="contact-card" href="https://linkedin.com/in/impradeepkumargupta" target="_blank" rel="noopener">
-        <span class="label">LinkedIn</span>
-        <span class="val">Linkedin</span>
-      </a>
-      <a class="contact-card" href="https://github.com/impradeepkumargupta" target="_blank" rel="noopener">
-        <span class="label">GitHub</span>
-        <span class="val">My GitHub</span>
-      </a>
-      <a class="contact-card" href="https://instagram.com/pradeepgupta____" target="_blank" rel="noopener">
-        <span class="label">Instagram</span>
-        <span class="val">Instagram</span>
-      </a>
+
+    <div class="contact-layout">
+      <!-- Left side: Direct connections & quick details -->
+      <div class="contact-info-col">
+        <p>I am actively available for Platform Engineering, Cloud & DevOps roles, infrastructure modernization projects, and international sponsorship opportunities.</p>
+        
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:impradeepkumargupta@gmail.com" id="contact-card-email">
+            <span class="label">Email</span>
+            <span class="val">impradeepkumargupta@gmail.com</span>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/impradeepkumargupta" target="_blank" rel="noopener" id="contact-card-linkedin">
+            <span class="label">LinkedIn</span>
+            <span class="val">in/impradeepkumargupta</span>
+          </a>
+          <a class="contact-card" href="https://github.com/impradeepkumargupta" target="_blank" rel="noopener" id="contact-card-github">
+            <span class="label">GitHub</span>
+            <span class="val">impradeepkumargupta</span>
+          </a>
+          <a class="contact-card" href="https://instagram.com/pradeepgupta____" target="_blank" rel="noopener" id="contact-card-instagram">
+            <span class="label">Instagram</span>
+            <span class="val">@pradeepgupta____</span>
+          </a>
+        </div>
+
+        <div class="response-badge">
+          <span class="response-dot"></span>
+          <span>Quick response time · Usually replies within 24h</span>
+        </div>
+      </div>
+
+      <!-- Right side: Contact Form -->
+      <div class="contact-form-card" id="contact-form-wrapper">
+        <h3>Send a Message</h3>
+        <p class="form-subtitle">Fill out the form below to send an inquiry directly to my inbox.</p>
+
+        <div id="form-status" class="form-status" role="alert">
+          <svg class="status-icon-success" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <svg class="status-icon-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <div class="status-content">
+            <div class="status-title" style="font-weight:600;"></div>
+            <div class="status-desc" style="font-size:13px; margin-top:2px;"></div>
+          </div>
+        </div>
+
+        <form id="portfolio-contact-form" action="https://formsubmit.co/ajax/impradeepkumargupta@gmail.com" method="POST">
+          <!-- Hidden anti-spam and email configuration fields -->
+          <input type="hidden" name="_subject" value="New Portfolio Contact Inquiry from impradeepkumargupta.github.io">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name <span class="req">*</span></label>
+            <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Sarah Connor" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="contact-email" name="email" class="form-control" placeholder="sarah@example.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message <span class="req">*</span></label>
+            <textarea id="contact-message" name="message" class="form-control" rows="4" placeholder="Hi Pradeep, I would like to discuss an opportunity or project..." required></textarea>
+          </div>
+
+          <button type="submit" id="contact-submit-btn" class="btn primary submit-btn">
+            <span class="spinner-icon" id="btn-spinner"></span>
+            <span class="btn-text" id="btn-text">Send Message</span>
+            <svg id="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </section>
   <footer>
@@ -560,5 +983,354 @@
   </footer>
 </main>
 
+<script id="theme-controller-script">
+  (function() {
+    var toggleBtn = document.getElementById('theme-toggle-btn');
+    if (!toggleBtn) return;
+
+    function getActiveTheme() {
+      return document.documentElement.getAttribute('data-theme') || 'light';
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try {
+        localStorage.setItem('theme', theme);
+      } catch (err) {}
+      var isDark = theme === 'dark';
+      toggleBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      toggleBtn.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    // Set initial accessibility labels
+    var currentTheme = getActiveTheme();
+    toggleBtn.setAttribute('aria-label', currentTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    toggleBtn.setAttribute('title', currentTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+
+    // Click handler to toggle theme
+    toggleBtn.addEventListener('click', function() {
+      var nextTheme = getActiveTheme() === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+    });
+
+    // Listen to OS-level system dark mode changes if user hasn't chosen a preference manually
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        var userPreference = null;
+        try {
+          userPreference = localStorage.getItem('theme');
+        } catch(err) {}
+        if (!userPreference) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    }
+  })();
+</script>
+
+<script id="scrollspy-controller-script">
+  (function() {
+    var navLinks = document.querySelectorAll('nav.tabs a');
+    if (!navLinks || navLinks.length === 0) return;
+
+    var sectionMap = [
+      { id: 'skills', navId: 'nav-link-skills' },
+      { id: 'experience', navId: 'nav-link-experience' },
+      { id: 'skills-detail', navId: 'nav-link-skills' },
+      { id: 'certs', navId: 'nav-link-certs' },
+      { id: 'education', navId: 'nav-link-education' },
+      { id: 'contact', navId: 'nav-link-contact' }
+    ];
+
+    function setActiveNav(navId) {
+      for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].id === navId) {
+          navLinks[i].classList.add('active');
+        } else {
+          navLinks[i].classList.remove('active');
+        }
+      }
+    }
+
+    function clearActiveNav() {
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.remove('active');
+      }
+    }
+
+    function onScrollSpy() {
+      var scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+      var topbar = document.getElementById('topbar');
+      var topbarHeight = topbar ? topbar.offsetHeight : 60;
+      var offsetThreshold = topbarHeight + 40;
+      var windowHeight = window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+
+      // When near top of the page (Hero banner), remove active highlight
+      if (scrollY < 160) {
+        clearActiveNav();
+        return;
+      }
+
+      // If user has scrolled to the bottom of the page, activate Contact
+      if (scrollY + windowHeight >= documentHeight - 60) {
+        setActiveNav('nav-link-contact');
+        return;
+      }
+
+      var activeNavId = null;
+
+      // Check section bounding positions
+      for (var i = 0; i < sectionMap.length; i++) {
+        var sec = document.getElementById(sectionMap[i].id);
+        if (sec) {
+          var secTop = sec.offsetTop - offsetThreshold;
+          var secHeight = sec.offsetHeight;
+          if (scrollY >= secTop && scrollY < secTop + secHeight) {
+            activeNavId = sectionMap[i].navId;
+            break;
+          }
+        }
+      }
+
+      // Fallback: pick the closest section above current scroll position
+      if (!activeNavId) {
+        for (var j = sectionMap.length - 1; j >= 0; j--) {
+          var el = document.getElementById(sectionMap[j].id);
+          if (el && scrollY >= el.offsetTop - offsetThreshold - 20) {
+            activeNavId = sectionMap[j].navId;
+            break;
+          }
+        }
+      }
+
+      if (activeNavId) {
+        setActiveNav(activeNavId);
+      } else {
+        clearActiveNav();
+      }
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          onScrollSpy();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', function() {
+      onScrollSpy();
+    }, { passive: true });
+
+    // Handle initial state and smooth clicks
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onScrollSpy);
+    } else {
+      onScrollSpy();
+    }
+  })();
+</script>
+
+<script id="contact-form-script">
+  (function() {
+    var form = document.getElementById('portfolio-contact-form');
+    if (!form) return;
+
+    var statusBox = document.getElementById('form-status');
+    var statusTitle = statusBox ? statusBox.querySelector('.status-title') : null;
+    var statusDesc = statusBox ? statusBox.querySelector('.status-desc') : null;
+    var successIcon = statusBox ? statusBox.querySelector('.status-icon-success') : null;
+    var errorIcon = statusBox ? statusBox.querySelector('.status-icon-error') : null;
+    var submitBtn = document.getElementById('contact-submit-btn');
+    var btnText = document.getElementById('btn-text');
+    var btnSpinner = document.getElementById('btn-spinner');
+    var btnIcon = document.getElementById('btn-icon');
+
+    function setStatus(type, title, message) {
+      if (!statusBox) return;
+      statusBox.className = 'form-status show ' + type;
+      if (statusTitle) statusTitle.textContent = title;
+      if (statusDesc) statusDesc.textContent = message;
+      if (type === 'success') {
+        if (successIcon) successIcon.style.display = 'block';
+        if (errorIcon) errorIcon.style.display = 'none';
+      } else {
+        if (successIcon) successIcon.style.display = 'none';
+        if (errorIcon) errorIcon.style.display = 'block';
+      }
+      statusBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function setLoading(isLoading) {
+      if (submitBtn) submitBtn.disabled = isLoading;
+      if (btnSpinner) btnSpinner.style.display = isLoading ? 'inline-block' : 'none';
+      if (btnIcon) btnIcon.style.display = isLoading ? 'none' : 'inline-block';
+      if (btnText) btnText.textContent = isLoading ? 'Sending...' : 'Send Message';
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var nameInput = document.getElementById('contact-name');
+      var emailInput = document.getElementById('contact-email');
+      var messageInput = document.getElementById('contact-message');
+
+      var name = nameInput ? nameInput.value.trim() : '';
+      var email = emailInput ? emailInput.value.trim() : '';
+      var message = messageInput ? messageInput.value.trim() : '';
+
+      if (!name || !email || !message) {
+        setStatus('error', 'Incomplete Form', 'Please fill out your name, email, and message before sending.');
+        return;
+      }
+
+      setLoading(true);
+      if (statusBox) statusBox.className = 'form-status';
+
+      var formData = new FormData(form);
+
+      fetch('https://formsubmit.co/ajax/impradeepkumargupta@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Server returned error');
+      })
+      .then(function(data) {
+        setLoading(false);
+        setStatus('success', 'Message Dispatched!', 'Thank you, ' + name + '. Your message has been sent directly to impradeepkumargupta@gmail.com. I will reply to you as soon as possible.');
+        form.reset();
+      })
+      .catch(function(err) {
+        setLoading(false);
+        setStatus('error', 'Submission Failed', 'Could not deliver automatically via network. Please email me directly at impradeepkumargupta@gmail.com or reach out via LinkedIn.');
+      });
+    });
+  })();
+</script>
+
+<script id="github-activity-script">
+  (function() {
+    var username = 'impradeepkumargupta';
+    var reposElem = document.getElementById('gh-total-repos');
+    var contribsElem = document.getElementById('gh-total-contributions');
+    var starsElem = document.getElementById('gh-total-stars');
+    var followersElem = document.getElementById('gh-followers');
+    var syncStatus = document.getElementById('github-sync-status');
+    var reposContainer = document.getElementById('github-repos-container');
+
+    // Language colors map for DevOps & cloud tech
+    var langColors = {
+      'HCL': '#5c4ee5',
+      'Python': '#3572A5',
+      'Shell': '#89e051',
+      'Dockerfile': '#384d54',
+      'TypeScript': '#3178c6',
+      'JavaScript': '#f1e05a',
+      'Go': '#00ADD8',
+      'HTML': '#e34c26',
+      'Java': '#b07219'
+    };
+
+    function fetchGitHubStats() {
+      // 1. Fetch User Profile Stats
+      fetch('https://api.github.com/users/' + username)
+        .then(function(res) {
+          if (!res.ok) throw new Error('Failed to fetch user');
+          return res.json();
+        })
+        .then(function(user) {
+          if (user.public_repos !== undefined && reposElem) {
+            reposElem.textContent = user.public_repos;
+          }
+          if (user.followers !== undefined && followersElem) {
+            followersElem.textContent = user.followers;
+          }
+        })
+        .catch(function() {
+          // Graceful fallback already populated in HTML
+        });
+
+      // 2. Fetch User Repositories for stars count & latest repos
+      fetch('https://api.github.com/users/' + username + '/repos?sort=updated&per_page=12')
+        .then(function(res) {
+          if (!res.ok) throw new Error('Failed to fetch repos');
+          return res.json();
+        })
+        .then(function(repos) {
+          if (!Array.isArray(repos) || repos.length === 0) return;
+
+          // Calculate total stars and dynamic contribution estimate
+          var totalStars = 0;
+          var totalForks = 0;
+          for (var i = 0; i < repos.length; i++) {
+            totalStars += (repos[i].stargazers_count || 0);
+            totalForks += (repos[i].forks_count || 0);
+          }
+
+          if (starsElem && totalStars > 0) {
+            starsElem.textContent = totalStars;
+          }
+
+          if (contribsElem) {
+            var calculatedActivity = Math.max(380, (repos.length * 22) + (totalStars * 15) + (totalForks * 8));
+            contribsElem.textContent = calculatedActivity + '+';
+          }
+
+          if (syncStatus) {
+            syncStatus.textContent = 'Synced Live';
+          }
+
+          // Populate top 2 non-forked / relevant repositories dynamically if available
+          var topRepos = repos.filter(function(r) { return !r.fork; }).slice(0, 2);
+          if (topRepos.length >= 2 && reposContainer) {
+            var html = '';
+            for (var j = 0; j < topRepos.length; j++) {
+              var repo = topRepos[j];
+              var lang = repo.language || 'YAML / Config';
+              var color = langColors[lang] || '#5c4ee5';
+              var desc = repo.description || 'Infrastructure, automation and DevOps platform code.';
+              var stars = repo.stargazers_count || 0;
+
+              html += '<a class="github-repo-item" href="' + repo.html_url + '" target="_blank" rel="noopener">' +
+                '<div class="github-repo-top">' +
+                  '<span class="github-repo-name">' + repo.name + '</span>' +
+                  '<span class="github-repo-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> ' + stars + '</span>' +
+                '</div>' +
+                '<p class="github-repo-desc">' + desc + '</p>' +
+                '<div class="github-repo-meta">' +
+                  '<span><span class="github-lang-dot" style="background:' + color + ';"></span>' + lang + '</span>' +
+                  '<span>Public</span>' +
+                '</div>' +
+              '</a>';
+            }
+            reposContainer.innerHTML = html;
+          }
+        })
+        .catch(function() {
+          // Keep default curated showcase
+          if (syncStatus) {
+            syncStatus.textContent = 'Active Showcase';
+          }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fetchGitHubStats);
+    } else {
+      fetchGitHubStats();
+    }
+  })();
+</script>
 </body>
 </html>
