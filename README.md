@@ -5,19 +5,6 @@
     <img src="./public/readme/hero.svg" width="100%" alt="Pradeep Kumar Gupta — Cloud DevOps and Platform Engineer" />
   </a>
 
-  <!-- Quick Action Bar (Directly Clickable Links) -->
-  <p>
-    <a href="https://impradeepkumargupta.github.io/Pradeep_Kumar_Gupta_Resume.pdf"><b>Download Resume (PDF) ↗</b></a>
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    <a href="https://impradeepkumargupta.github.io/"><b>Live Portfolio Website ↗</b></a>
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    <a href="https://www.credly.com/badges/7b92f87b-9654-437b-aee3-d9dad3865bf9"><b>Verify GCP Cloud Architect Badge ↗</b></a>
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    <a href="https://linkedin.com/in/impradeepkumargupta"><b>LinkedIn ↗</b></a>
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    <a href="mailto:impradeepkumargupta@gmail.com"><b>impradeepkumargupta@gmail.com ↗</b></a>
-  </p>
-
   <!-- 2. EXPERIENCE UI (Ericsson Card + Pill Tech Chips) -->
   <a href="https://impradeepkumargupta.github.io/#experience">
     <img src="./public/readme/experience.svg" width="100%" alt="Experience — DevOps & Cloud Engineer at Ericsson" />
