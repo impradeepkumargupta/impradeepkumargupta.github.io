@@ -871,6 +871,22 @@ export default function App() {
               <div className="meta">
                 <span>Physics · Chemistry · Mathematics · English</span>
               </div>
+
+              <div className="edu-subblock">
+                <h4>Secondary Education</h4>
+                <div className="school">
+                  Lord Gautam Buddha English Boarding High School, Thutipipal, Nepal
+                </div>
+                <div className="meta">
+                  <span>
+                    <strong>Passout:</strong> 2017
+                  </span>
+                  <span>·</span>
+                  <span>
+                    <strong>CGPA:</strong> 3.75 / 4.00
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
