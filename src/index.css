@@ -212,15 +212,6 @@ nav.tabs a.active::after {
   }
 }
 
-@media (max-width: 560px) {
-  #print-pdf-nav-btn span {
-    display: none;
-  }
-  #print-pdf-nav-btn {
-    padding: 8px 10px;
-  }
-}
-
 .topbar-actions {
   display: flex;
   align-items: center;
