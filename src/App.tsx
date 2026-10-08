@@ -298,6 +298,29 @@ export default function App() {
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
             </button>
+            <button
+              type="button"
+              className="btn print-pdf-btn"
+              id="print-pdf-nav-btn"
+              onClick={() => window.print()}
+              title="Print or Save as PDF"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                width="15"
+                height="15"
+              >
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <span>Print to PDF</span>
+            </button>
             <a
               className="btn primary"
               id="resume-nav-btn"
@@ -419,6 +442,28 @@ export default function App() {
                 >
                   Download resume
                 </a>
+                <button
+                  type="button"
+                  className="btn print-pdf-btn"
+                  id="print-pdf-hero-btn"
+                  onClick={() => window.print()}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    width="16"
+                    height="16"
+                  >
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Print to PDF</span>
+                </button>
                 <a
                   className="btn"
                   href="https://github.com/impradeepkumargupta"
@@ -873,7 +918,7 @@ export default function App() {
               </div>
 
               <div className="edu-subblock">
-                <h4>Secondary Education School (10th)</h4>
+                <h4>Secondary School (10th)</h4>
                 <div className="school">
                   Lord Gautam Buddha English Boarding High School, Thutipipal, Nepal
                 </div>

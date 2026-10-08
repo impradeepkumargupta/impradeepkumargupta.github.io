@@ -212,6 +212,15 @@ nav.tabs a.active::after {
   }
 }
 
+@media (max-width: 560px) {
+  #print-pdf-nav-btn span {
+    display: none;
+  }
+  #print-pdf-nav-btn {
+    padding: 8px 10px;
+  }
+}
+
 .topbar-actions {
   display: flex;
   align-items: center;
@@ -1608,9 +1617,13 @@ footer p {
 
   .topbar,
   .theme-toggle-btn,
+  .mobile-menu-btn,
+  .mobile-nav-drawer,
   .contact-form-card,
   .response-badge,
   .availability-actions,
+  .print-pdf-btn,
+  .cta-row,
   #resume-nav-btn {
     display: none !important;
   }
@@ -1622,14 +1635,35 @@ footer p {
   }
 
   section {
-    padding: 20px 0 !important;
+    padding: 18px 0 !important;
     border-top: 1px solid #e5e7eb !important;
     break-inside: auto;
   }
 
   .hero {
     padding-top: 0 !important;
+    padding-bottom: 18px !important;
     border-top: none !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 125px !important;
+    gap: 24px !important;
+    align-items: start !important;
+  }
+
+  .photo-frame {
+    width: 125px !important;
+    max-width: 125px !important;
+    aspect-ratio: 1 / 1.12 !important;
+    margin: 0 !important;
+    border: 1px solid #d1d5db !important;
+  }
+
+  .edu-subblock {
+    border-top: 1px solid #e5e7eb !important;
+    margin-top: 10px !important;
+    padding-top: 10px !important;
   }
 
   .job,
@@ -1645,6 +1679,7 @@ footer p {
     background: #f9fafb !important;
     margin-bottom: 12px !important;
     box-shadow: none !important;
+    height: auto !important;
   }
 
   .ach-list {
