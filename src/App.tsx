@@ -873,7 +873,7 @@ export default function App() {
               </div>
 
               <div className="edu-subblock">
-                <h4>Secondary Education (10th)</h4>
+                <h4>Secondary Education School (10th)</h4>
                 <div className="school">
                   Lord Gautam Buddha English Boarding High School, Thutipipal, Nepal
                 </div>
