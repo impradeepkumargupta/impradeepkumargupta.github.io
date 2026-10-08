@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 685" width="100%">
+  
+  <defs>
+    <style>
+      .card { fill: #f8f9fa; stroke: #e8eaed; stroke-width: 1; }
+      .card-white { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .chip { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .btn-primary { fill: #1a73e8; }
+      .btn-primary-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .btn-secondary { fill: #ffffff; stroke: #dadce0; stroke-width: 1; }
+      .btn-secondary-text { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .eyebrow { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+      .h1 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.8px; }
+      .h2 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.4px; }
+      .h3 { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.4px; }
+      .h4 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15.5px; font-weight: 700; }
+      .job-title { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .body { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; }
+      .body-sm { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; }
+      .body-xs { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12.5px; }
+      .text-dark { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .text-bold { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .faint { fill: #80868b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; }
+      .mono-blue { fill: #1a73e8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 700; }
+      .mono-time { fill: #5f6368; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+      .link { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+      .green-text { fill: #188038; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .green-circle { fill: #e6f4ea; }
+      .green-stroke { stroke: #188038; }
+      .blue-box { fill: #e8f0fe; }
+      .divider { stroke: #e8eaed; stroke-width: 1; }
+      .bullet-grey { fill: #80868b; }
+      .bullet-blue { fill: #1a73e8; }
+      @media (prefers-color-scheme: dark) {
+        .card { fill: #1a1c21; stroke: #2d3135; }
+        .card-white { fill: #121316; stroke: #2d3135; }
+        .chip { fill: #121316; stroke: #2d3135; }
+        .btn-primary { fill: #8ab4f8; }
+        .btn-primary-text { fill: #121316; }
+        .btn-secondary { fill: #1a1c21; stroke: #3c4043; }
+        .btn-secondary-text { fill: #e8eaed; }
+        .eyebrow, .h3, .mono-blue, .link { fill: #8ab4f8; }
+        .h1, .h2, .h4, .job-title, .text-dark, .text-bold { fill: #e8eaed; }
+        .body, .body-sm, .body-xs, .mono-time { fill: #9aa0a6; }
+        .faint { fill: #80868b; }
+        .green-text { fill: #81c995; }
+        .green-circle { fill: #173323; }
+        .green-stroke { stroke: #81c995; }
+        .blue-box { fill: #1b283f; }
+        .divider { stroke: #2d3135; }
+        .bullet-blue { fill: #8ab4f8; }
+      }
+    </style>
+  </defs>
+
+  <line x1="24" y1="8" x2="1056" y2="8" class="divider" />
+  <text x="24" y="48" class="eyebrow">Career &amp; Growth</text>
+  <text x="24" y="84" class="h2">Experience</text>
+
+  <rect x="24" y="112" width="1032" height="556" rx="12" class="card" />
+  <text x="52" y="150" class="job-title">DevOps &amp; Cloud Engineer</text>
+  <text x="52" y="172" class="body-sm"><tspan class="link">Ericsson</tspan> — Gurugram, India · 4+ years experience</text>
+  <text x="1028" y="150" text-anchor="end" class="mono-time">Feb 2023 — Present</text>
+
+  <circle cx="58" cy="195" r="2.5" class="bullet-grey" /><text x="72" y="200" class="body-sm">Designed, implemented, and maintained cloud automation across production-grade Kubernetes clusters on GKE, supporting</text><text x="72" y="220" class="body-sm">100+ microservices and 1,000+ customer nodes across development, staging, and production environments.</text><circle cx="58" cy="243" r="2.5" class="bullet-grey" /><text x="72" y="248" class="body-sm">Deployed and supported containerized applications with Kubernetes (GKE) and Docker across 100+ services in collaboration</text><text x="72" y="268" class="body-sm">with development and architecture teams.</text><circle cx="58" cy="291" r="2.5" class="bullet-grey" /><text x="72" y="296" class="body-sm">Developed and managed CI/CD pipelines using GCP DevOps (Cloud Build, Artifact Registry / Artifactory, Cloud Deploy) and</text><text x="72" y="316" class="body-sm">GitHub Actions workflows to automate build, test, and deployment for Java and Python applications.</text><circle cx="58" cy="339" r="2.5" class="bullet-grey" /><text x="72" y="344" class="body-sm">Automated infrastructure provisioning and configuration management using Terraform and Ansible across networking,</text><text x="72" y="364" class="body-sm">compute, Kubernetes, databases, and storage.</text><circle cx="58" cy="387" r="2.5" class="bullet-grey" /><text x="72" y="392" class="body-sm">Built centralized monitoring, alerting, and logging using ELK Stack (Elasticsearch, Logstash, Kibana), Grafana, and Zabbix</text><text x="72" y="412" class="body-sm">for platform reliability and performance optimization.</text><circle cx="58" cy="435" r="2.5" class="bullet-grey" /><text x="72" y="440" class="body-sm">Administered Linux (RHEL) systems and networking — process/package management, filesystem, permissions, and</text><text x="72" y="460" class="body-sm">distributed-system troubleshooting.</text><circle cx="58" cy="483" r="2.5" class="bullet-grey" /><text x="72" y="488" class="body-sm">Applied DevSecOps practices — security validation and deployment standardization — across CI/CD workflows.</text><circle cx="58" cy="511" r="2.5" class="bullet-grey" /><text x="72" y="516" class="body-sm">Reduced cloud infrastructure costs by ~30% through rightsizing, resource optimization, autoscaling, and monitoring-driven</text><text x="72" y="536" class="body-sm">improvements.</text><circle cx="58" cy="559" r="2.5" class="bullet-grey" /><text x="72" y="564" class="body-sm">Contributed to migrating 250+ virtual machines from Kyndryl infrastructure to GCP with minimal downtime.</text>
+  <rect x="52" y="582" width="205" height="28" rx="14" class="chip" /><text x="154.5" y="600" text-anchor="middle" class="body-xs">Google Cloud Platform (GCP)</text><rect x="265" y="582" width="62" height="28" rx="14" class="chip" /><text x="296" y="600" text-anchor="middle" class="body-xs">AWS</text><rect x="335" y="582" width="92" height="28" rx="14" class="chip" /><text x="381" y="600" text-anchor="middle" class="body-xs">Terraform</text><rect x="435" y="582" width="195" height="28" rx="14" class="chip" /><text x="532.5" y="600" text-anchor="middle" class="body-xs">Docker &amp; Kubernetes (GKE)</text><rect x="638" y="582" width="265" height="28" rx="14" class="chip" /><text x="770.5" y="600" text-anchor="middle" class="body-xs">Cloud Build · Artifactory · Cloud Deploy</text><rect x="911" y="582" width="152" height="28" rx="14" class="chip" /><text x="987" y="600" text-anchor="middle" class="body-xs">Git &amp; GitHub Actions</text><rect x="52" y="618" width="250" height="28" rx="14" class="chip" /><text x="177" y="636" text-anchor="middle" class="body-xs">ELK Stack (Elastic, Logstash, Kibana)</text><rect x="310" y="618" width="80" height="28" rx="14" class="chip" /><text x="350" y="636" text-anchor="middle" class="body-xs">Grafana</text><rect x="398" y="618" width="74" height="28" rx="14" class="chip" /><text x="435" y="636" text-anchor="middle" class="body-xs">Zabbix</text><rect x="480" y="618" width="118" height="28" rx="14" class="chip" /><text x="539" y="636" text-anchor="middle" class="body-xs">Python &amp; Bash</text><rect x="606" y="618" width="252" height="28" rx="14" class="chip" /><text x="732" y="636" text-anchor="middle" class="body-xs">Linux Systems Administration (RHEL)</text><rect x="866" y="618" width="100" height="28" rx="14" class="chip" /><text x="916" y="636" text-anchor="middle" class="body-xs">Networking</text>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 695" width="100%">
+  
+  <defs>
+    <style>
+      .card { fill: #f8f9fa; stroke: #e8eaed; stroke-width: 1; }
+      .card-white { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .chip { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .btn-primary { fill: #1a73e8; }
+      .btn-primary-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .btn-secondary { fill: #ffffff; stroke: #dadce0; stroke-width: 1; }
+      .btn-secondary-text { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .eyebrow { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+      .h1 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.8px; }
+      .h2 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.4px; }
+      .h3 { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.4px; }
+      .h4 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15.5px; font-weight: 700; }
+      .job-title { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .body { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; }
+      .body-sm { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; }
+      .body-xs { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12.5px; }
+      .text-dark { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .text-bold { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .faint { fill: #80868b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; }
+      .mono-blue { fill: #1a73e8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 700; }
+      .mono-time { fill: #5f6368; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+      .link { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+      .green-text { fill: #188038; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .green-circle { fill: #e6f4ea; }
+      .green-stroke { stroke: #188038; }
+      .blue-box { fill: #e8f0fe; }
+      .divider { stroke: #e8eaed; stroke-width: 1; }
+      .bullet-grey { fill: #80868b; }
+      .bullet-blue { fill: #1a73e8; }
+      @media (prefers-color-scheme: dark) {
+        .card { fill: #1a1c21; stroke: #2d3135; }
+        .card-white { fill: #121316; stroke: #2d3135; }
+        .chip { fill: #121316; stroke: #2d3135; }
+        .btn-primary { fill: #8ab4f8; }
+        .btn-primary-text { fill: #121316; }
+        .btn-secondary { fill: #1a1c21; stroke: #3c4043; }
+        .btn-secondary-text { fill: #e8eaed; }
+        .eyebrow, .h3, .mono-blue, .link { fill: #8ab4f8; }
+        .h1, .h2, .h4, .job-title, .text-dark, .text-bold { fill: #e8eaed; }
+        .body, .body-sm, .body-xs, .mono-time { fill: #9aa0a6; }
+        .faint { fill: #80868b; }
+        .green-text { fill: #81c995; }
+        .green-circle { fill: #173323; }
+        .green-stroke { stroke: #81c995; }
+        .blue-box { fill: #1b283f; }
+        .divider { stroke: #2d3135; }
+        .bullet-blue { fill: #8ab4f8; }
+      }
+    </style>
+  </defs>
+
+  <line x1="24" y1="8" x2="1056" y2="8" class="divider" />
+  <text x="24" y="48" class="eyebrow">Background</text>
+  <text x="24" y="84" class="h2">Education</text>
+
+  <!-- Left Card: B.Tech -->
+  <rect x="24" y="112" width="492" height="248" rx="12" class="card" />
+  <text x="50" y="146" class="h4">Bachelor of Technology (B.Tech) in Computer Science</text>
+  <text x="50" y="166" class="h4">and Engineering</text>
+  <text x="50" y="190" class="body-sm">Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India ↗</text>
+  <text x="50" y="218" class="faint"><tspan class="text-bold">Duration:</tspan> 2019 — 2023   ·   <tspan class="text-bold">CGPA:</tspan> 7.92 / 10</text>
+  <text x="50" y="244" class="faint"><tspan class="text-bold">Scholarship:</tspan> COMPEX Fully Funded Scholarship by EdCIL</text>
+  <text x="50" y="262" class="faint">(Embassy of India)</text>
+  <text x="50" y="292" class="faint">Cloud Computing · Distributed Systems · Operating Systems ·</text>
+  <text x="50" y="310" class="faint">Computer Networks · Databases · Algorithms</text>
+
+  <!-- Right Card: Higher Secondary + Secondary School (10th) -->
+  <rect x="564" y="112" width="492" height="248" rx="12" class="card" />
+  <text x="590" y="146" class="h4">Higher Secondary (+2, Science)</text>
+  <text x="590" y="168" class="body-sm">Tilottama Higher Secondary School, Butwal, Nepal</text>
+  <text x="590" y="194" class="faint"><tspan class="text-bold">Duration:</tspan> 2017 — 2019   ·   <tspan class="text-bold">CGPA:</tspan> 3.61 / 4.00</text>
+  <text x="590" y="216" class="faint">Physics · Chemistry · Mathematics · English</text>
+
+  <line x1="590" y1="234" x2="1030" y2="234" class="divider" />
+
+  <text x="590" y="260" class="h4">Secondary School (10th)</text>
+  <text x="590" y="282" class="body-sm">Lord Gautam Buddha English Boarding High School, Thutipipal, Nepal</text>
+  <text x="590" y="308" class="faint"><tspan class="text-bold">Passout:</tspan> 2017   ·   <tspan class="text-bold">CGPA:</tspan> 3.75 / 4.00</text>
+
+  <!-- Key Achievements -->
+  <line x1="24" y1="396" x2="1056" y2="396" class="divider" />
+  <text x="24" y="436" class="eyebrow">Track Record</text>
+  <text x="24" y="472" class="h2">Key Achievements</text>
+
+  <circle cx="28" cy="505" r="3" class="bullet-blue" />
+  <text x="46" y="510" class="body"><tspan class="text-bold">Production Infrastructure at Scale:</tspan> Supported and operated enterprise cloud infrastructure serving 1,000+ customer</text>
+  <text x="46" y="532" class="body">nodes, orchestrating 100+ containerized microservices across Kubernetes (GKE) and Docker cluster environments.</text>
+
+  <circle cx="28" cy="563" r="3" class="bullet-blue" />
+  <text x="46" y="568" class="body"><tspan class="text-bold">Cloud Migration &amp; Cost Optimization:</tspan> Contributed to migrating 250+ virtual machines from legacy infrastructure to</text>
+  <text x="46" y="590" class="body">GCP with minimal downtime, achieving ~30% in infrastructure savings through autoscaling and resource optimization.</text>
+
+  <circle cx="28" cy="621" r="3" class="bullet-blue" />
+  <text x="46" y="626" class="body"><tspan class="text-bold">Certified Cloud Architect:</tspan> Google Cloud Certified Professional Cloud Architect (<tspan class="link">Verify Badge ↗</tspan>), demonstrating</text>
+  <text x="46" y="648" class="body">architectural mastery in scalable, resilient, and secure enterprise GCP environments.</text>
+
+  <circle cx="28" cy="679" r="3" class="bullet-blue" />
+  <text x="46" y="684" class="body"><tspan class="text-bold">COMPEX Merit Scholarship:</tspan> Awarded a competitive, fully funded undergraduate engineering scholarship by EdCIL India.</text>
+</svg>

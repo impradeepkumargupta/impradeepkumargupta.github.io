@@ -936,6 +936,15 @@ section {
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
+@media (max-width: 540px) {
+  .edu-item {
+    padding: 20px 18px;
+  }
+  .skill-card {
+    padding: 20px 18px;
+  }
+}
+
 .edu-item:hover {
   border-color: var(--blue);
   box-shadow: var(--shadow-1);

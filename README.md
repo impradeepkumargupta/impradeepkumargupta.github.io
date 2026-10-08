@@ -1,20 +1,57 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+
+  <!-- 1. HERO UI (Exact CSS Render: Eyebrow, Title, Summary, Pill Buttons & Framed Portrait) -->
+  <a href="https://impradeepkumargupta.github.io/">
+    <img src="./public/readme/hero.svg" width="100%" alt="Pradeep Kumar Gupta — Cloud DevOps and Platform Engineer" />
+  </a>
+
+  <!-- Quick Action Bar (Directly Clickable Links) -->
+  <p>
+    <a href="https://impradeepkumargupta.github.io/Pradeep_Kumar_Gupta_Resume.pdf"><b>Download Resume (PDF) ↗</b></a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://impradeepkumargupta.github.io/"><b>Live Portfolio Website ↗</b></a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://www.credly.com/badges/7b92f87b-9654-437b-aee3-d9dad3865bf9"><b>Verify GCP Cloud Architect Badge ↗</b></a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/impradeepkumargupta"><b>LinkedIn ↗</b></a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="mailto:impradeepkumargupta@gmail.com"><b>impradeepkumargupta@gmail.com ↗</b></a>
+  </p>
+
+  <!-- 2. EXPERIENCE UI (Ericsson Card + Pill Tech Chips) -->
+  <a href="https://impradeepkumargupta.github.io/#experience">
+    <img src="./public/readme/experience.svg" width="100%" alt="Experience — DevOps & Cloud Engineer at Ericsson" />
+  </a>
+
+  <!-- 3. CLOUD & PLATFORM ENGINEERING PIPELINE (8-Card Grid) + CORE PROFICIENCIES (6-Card Grid) -->
+  <a href="https://impradeepkumargupta.github.io/#skills">
+    <img src="./public/readme/skills.svg" width="100%" alt="Cloud & Platform Engineering Pipeline and Core Proficiencies" />
+  </a>
+
+  <!-- 4. CERTIFICATIONS & LANGUAGE PROFICIENCY (2-Column Card Grid with Green Check Badges) -->
+  <a href="https://www.credly.com/badges/7b92f87b-9654-437b-aee3-d9dad3865bf9">
+    <img src="./public/readme/certs.svg" width="100%" alt="Certifications & Language Proficiency" />
+  </a>
+
+  <!-- 5. EDUCATION (2-Column Card Grid with Nested Secondary School) & KEY ACHIEVEMENTS -->
+  <a href="https://impradeepkumargupta.github.io/#education">
+    <img src="./public/readme/education.svg" width="100%" alt="Education & Key Achievements" />
+  </a>
+
+  <!-- 6. AVAILABILITY CARD & VERIFIED CONTACT CARDS -->
+  <a href="https://impradeepkumargupta.github.io/#contact">
+    <img src="./public/readme/contact.svg" width="100%" alt="Availability & Contact Profiles" />
+  </a>
+
+  <br />
+  <p>
+    <a href="mailto:impradeepkumargupta@gmail.com">Email</a> ·
+    <a href="tel:+918604932809">+91 8604932809</a> ·
+    <a href="https://linkedin.com/in/impradeepkumargupta">LinkedIn</a> ·
+    <a href="https://github.com/impradeepkumargupta">GitHub</a> ·
+    <a href="https://impradeepkumargupta.github.io/">Portfolio</a> ·
+    <a href="https://instagram.com/pradeepgupta____">Instagram</a>
+  </p>
+  <sub>© 2026 Pradeep Kumar Gupta</sub>
+
 </div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/295895d5-5c6f-4295-a4cb-77a0cccfa556
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`

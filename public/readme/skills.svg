@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1045" width="100%">
+  
+  <defs>
+    <style>
+      .card { fill: #f8f9fa; stroke: #e8eaed; stroke-width: 1; }
+      .card-white { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .chip { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .btn-primary { fill: #1a73e8; }
+      .btn-primary-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .btn-secondary { fill: #ffffff; stroke: #dadce0; stroke-width: 1; }
+      .btn-secondary-text { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .eyebrow { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+      .h1 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.8px; }
+      .h2 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.4px; }
+      .h3 { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.4px; }
+      .h4 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15.5px; font-weight: 700; }
+      .job-title { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .body { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; }
+      .body-sm { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; }
+      .body-xs { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12.5px; }
+      .text-dark { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .text-bold { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .faint { fill: #80868b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; }
+      .mono-blue { fill: #1a73e8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 700; }
+      .mono-time { fill: #5f6368; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+      .link { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+      .green-text { fill: #188038; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .green-circle { fill: #e6f4ea; }
+      .green-stroke { stroke: #188038; }
+      .blue-box { fill: #e8f0fe; }
+      .divider { stroke: #e8eaed; stroke-width: 1; }
+      .bullet-grey { fill: #80868b; }
+      .bullet-blue { fill: #1a73e8; }
+      @media (prefers-color-scheme: dark) {
+        .card { fill: #1a1c21; stroke: #2d3135; }
+        .card-white { fill: #121316; stroke: #2d3135; }
+        .chip { fill: #121316; stroke: #2d3135; }
+        .btn-primary { fill: #8ab4f8; }
+        .btn-primary-text { fill: #121316; }
+        .btn-secondary { fill: #1a1c21; stroke: #3c4043; }
+        .btn-secondary-text { fill: #e8eaed; }
+        .eyebrow, .h3, .mono-blue, .link { fill: #8ab4f8; }
+        .h1, .h2, .h4, .job-title, .text-dark, .text-bold { fill: #e8eaed; }
+        .body, .body-sm, .body-xs, .mono-time { fill: #9aa0a6; }
+        .faint { fill: #80868b; }
+        .green-text { fill: #81c995; }
+        .green-circle { fill: #173323; }
+        .green-stroke { stroke: #81c995; }
+        .blue-box { fill: #1b283f; }
+        .divider { stroke: #2d3135; }
+        .bullet-blue { fill: #8ab4f8; }
+      }
+    </style>
+  </defs>
+
+  <line x1="24" y1="8" x2="1056" y2="8" class="divider" />
+  <text x="24" y="48" class="eyebrow">Tech Stack</text>
+  <text x="24" y="84" class="h2">Cloud &amp; Platform Engineering</text>
+  <text x="24" y="112" class="body">Infrastructure, automation and platform technologies I use to build, deploy and operate cloud-native systems.</text>
+
+  
+    <rect x="24" y="140" width="246" height="142" rx="12" class="card" />
+    <text x="44" y="172" class="mono-blue">01</text>
+    <text x="44" y="196" class="h4">Linux &amp; Networking</text>
+    <text x="44" y="220" class="body-xs">RHEL systems administration,</text>
+    <text x="44" y="238" class="body-xs">TCP/IP, DNS, HTTP, routing,</text>
+    <text x="44" y="256" class="body-xs">filesystems and troubleshooting.</text>
+  
+    <rect x="286" y="140" width="246" height="142" rx="12" class="card" />
+    <text x="306" y="172" class="mono-blue">02</text>
+    <text x="306" y="196" class="h4">Google Cloud &amp; AWS</text>
+    <text x="306" y="220" class="body-xs">GCP (Compute Engine, GKE,</text>
+    <text x="306" y="238" class="body-xs">Cloud SQL, IAM, Storage), cloud</text>
+    <text x="306" y="256" class="body-xs">networking and AWS.</text>
+  
+    <rect x="548" y="140" width="246" height="142" rx="12" class="card" />
+    <text x="568" y="172" class="mono-blue">03</text>
+    <text x="568" y="196" class="h4">Docker &amp; Containers</text>
+    <text x="568" y="220" class="body-xs">Containerization, images,</text>
+    <text x="568" y="238" class="body-xs">Artifact Registry / Artifactory,</text>
+    <text x="568" y="256" class="body-xs">Compose and Docker Swarm.</text>
+  
+    <rect x="810" y="140" width="246" height="142" rx="12" class="card" />
+    <text x="830" y="172" class="mono-blue">04</text>
+    <text x="830" y="196" class="h4">Kubernetes / GKE</text>
+    <text x="830" y="220" class="body-xs">Production workloads,</text>
+    <text x="830" y="238" class="body-xs">deployments, services,</text>
+    <text x="830" y="256" class="body-xs">autoscaling and reliability.</text>
+  
+    <rect x="24" y="298" width="246" height="142" rx="12" class="card" />
+    <text x="44" y="330" class="mono-blue">05</text>
+    <text x="44" y="354" class="h4">Terraform (IaC)</text>
+    <text x="44" y="378" class="body-xs">Infrastructure as Code,</text>
+    <text x="44" y="396" class="body-xs">reusable modules and version-</text>
+    <text x="44" y="414" class="body-xs">controlled cloud provisioning.</text>
+  
+    <rect x="286" y="298" width="246" height="142" rx="12" class="card" />
+    <text x="306" y="330" class="mono-blue">06</text>
+    <text x="306" y="354" class="h4">CI/CD &amp; GCP DevOps</text>
+    <text x="306" y="378" class="body-xs">Cloud Build, Artifactory, Cloud</text>
+    <text x="306" y="396" class="body-xs">Deploy, GitHub Actions, and</text>
+    <text x="306" y="414" class="body-xs">GitOps delivery pipelines.</text>
+  
+    <rect x="548" y="298" width="246" height="142" rx="12" class="card" />
+    <text x="568" y="330" class="mono-blue">07</text>
+    <text x="568" y="354" class="h4">Automation &amp; Observability</text>
+    <text x="568" y="378" class="body-xs">Python, Bash, ELK (Elastic,</text>
+    <text x="568" y="396" class="body-xs">Logstash, Kibana), Grafana,</text>
+    <text x="568" y="414" class="body-xs">Zabbix and incident analysis.</text>
+  
+    <rect x="810" y="298" width="246" height="142" rx="12" class="card" />
+    <text x="830" y="330" class="mono-blue">08</text>
+    <text x="830" y="354" class="h4">Platform Engineering</text>
+    <text x="830" y="378" class="body-xs">Scalable, reliable and self-</text>
+    <text x="830" y="396" class="body-xs">service cloud infrastructure</text>
+    <text x="830" y="414" class="body-xs">for engineering teams.</text>
+  
+
+  <text x="24" y="510" class="eyebrow">Technical Domains</text>
+  <text x="24" y="546" class="h2">Core Proficiencies</text>
+
+  
+    <rect x="24" y="576" width="332" height="215" rx="12" class="card" />
+    <text x="48" y="610" class="h3">Cloud &amp; Platform</text>
+    <circle cx="52" cy="638" r="2.5" class="bullet-blue" /><text x="64" y="642" class="text-dark">Google Cloud Platform (GCP) — GKE,</text><text x="64" y="661" class="text-dark">Compute Engine, Cloud SQL, Storage</text><circle cx="52" cy="685" r="2.5" class="bullet-blue" /><text x="64" y="689" class="text-dark">Pub/Sub, BigQuery, Cloud Functions</text><circle cx="52" cy="713" r="2.5" class="bullet-blue" /><text x="64" y="717" class="text-dark">Cloud Monitoring, Cloud Logging, IAM</text><circle cx="52" cy="741" r="2.5" class="bullet-blue" /><text x="64" y="745" class="text-dark">AWS (EC2, S3, IAM)</text>
+  
+    <rect x="374" y="576" width="332" height="215" rx="12" class="card" />
+    <text x="398" y="610" class="h3">Containers &amp; Orchestration</text>
+    <circle cx="402" cy="638" r="2.5" class="bullet-blue" /><text x="414" y="642" class="text-dark">Kubernetes (GKE Standard &amp; Autopilot)</text><circle cx="402" cy="666" r="2.5" class="bullet-blue" /><text x="414" y="670" class="text-dark">Docker, Docker Swarm, Docker Compose</text><circle cx="402" cy="694" r="2.5" class="bullet-blue" /><text x="414" y="698" class="text-dark">Helm Charts &amp; Release Packaging</text><circle cx="402" cy="722" r="2.5" class="bullet-blue" /><text x="414" y="726" class="text-dark">Containerd &amp; Ingress-NGINX Controllers</text>
+  
+    <rect x="724" y="576" width="332" height="215" rx="12" class="card" />
+    <text x="748" y="610" class="h3">IaC &amp; Automation</text>
+    <circle cx="752" cy="638" r="2.5" class="bullet-blue" /><text x="764" y="642" class="text-dark">Terraform (Modules &amp; Remote State)</text><circle cx="752" cy="666" r="2.5" class="bullet-blue" /><text x="764" y="670" class="text-dark">Ansible Configuration Management</text><circle cx="752" cy="694" r="2.5" class="bullet-blue" /><text x="764" y="698" class="text-dark">GitOps Architecture &amp; Workflows</text><circle cx="752" cy="722" r="2.5" class="bullet-blue" /><text x="764" y="726" class="text-dark">Python, Bash / Shell Scripting</text>
+  
+    <rect x="24" y="809" width="332" height="215" rx="12" class="card" />
+    <text x="48" y="843" class="h3">CI / CD &amp; GCP DevOps</text>
+    <circle cx="52" cy="871" r="2.5" class="bullet-blue" /><text x="64" y="875" class="text-dark">GCP DevOps — Cloud Build, Artifactory</text><text x="64" y="894" class="text-dark">&amp; Cloud Deploy</text><circle cx="52" cy="918" r="2.5" class="bullet-blue" /><text x="64" y="922" class="text-dark">GitHub Actions &amp; Workflow Automation</text><circle cx="52" cy="946" r="2.5" class="bullet-blue" /><text x="64" y="950" class="text-dark">Git &amp; Trunk-Based Collaboration</text><circle cx="52" cy="974" r="2.5" class="bullet-blue" /><text x="64" y="978" class="text-dark">ArgoCD &amp; Automated Deployment Pipelines</text>
+  
+    <rect x="374" y="809" width="332" height="215" rx="12" class="card" />
+    <text x="398" y="843" class="h3">Observability &amp; Monitoring</text>
+    <circle cx="402" cy="871" r="2.5" class="bullet-blue" /><text x="414" y="875" class="text-dark">ELK Stack (Elasticsearch / Elastic,</text><text x="414" y="894" class="text-dark">Logstash, Kibana)</text><circle cx="402" cy="918" r="2.5" class="bullet-blue" /><text x="414" y="922" class="text-dark">Grafana Dashboards &amp; Alerting</text><circle cx="402" cy="946" r="2.5" class="bullet-blue" /><text x="414" y="950" class="text-dark">Zabbix Infrastructure Monitoring</text><circle cx="402" cy="974" r="2.5" class="bullet-blue" /><text x="414" y="978" class="text-dark">Google Cloud Operations Suite &amp; SLOs</text>
+  
+    <rect x="724" y="809" width="332" height="215" rx="12" class="card" />
+    <text x="748" y="843" class="h3">Systems &amp; Security</text>
+    <circle cx="752" cy="871" r="2.5" class="bullet-blue" /><text x="764" y="875" class="text-dark">Linux Systems Administration (RHEL / Ubuntu)</text><circle cx="752" cy="899" r="2.5" class="bullet-blue" /><text x="764" y="903" class="text-dark">Cloud Networking, VPC, DNS &amp; LB</text><circle cx="752" cy="927" r="2.5" class="bullet-blue" /><text x="764" y="931" class="text-dark">DevSecOps &amp; Least-Privilege IAM Policies</text><circle cx="752" cy="955" r="2.5" class="bullet-blue" /><text x="764" y="959" class="text-dark">MySQL &amp; PostgreSQL Operations</text>
+  
+</svg>

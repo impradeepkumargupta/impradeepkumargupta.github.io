@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 650" width="100%">
+  
+  <defs>
+    <style>
+      .card { fill: #f8f9fa; stroke: #e8eaed; stroke-width: 1; }
+      .card-white { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .chip { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .btn-primary { fill: #1a73e8; }
+      .btn-primary-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .btn-secondary { fill: #ffffff; stroke: #dadce0; stroke-width: 1; }
+      .btn-secondary-text { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .eyebrow { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+      .h1 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.8px; }
+      .h2 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.4px; }
+      .h3 { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.4px; }
+      .h4 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15.5px; font-weight: 700; }
+      .job-title { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .body { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; }
+      .body-sm { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; }
+      .body-xs { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12.5px; }
+      .text-dark { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .text-bold { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .faint { fill: #80868b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; }
+      .mono-blue { fill: #1a73e8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 700; }
+      .mono-time { fill: #5f6368; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+      .link { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+      .green-text { fill: #188038; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .green-circle { fill: #e6f4ea; }
+      .green-stroke { stroke: #188038; }
+      .blue-box { fill: #e8f0fe; }
+      .divider { stroke: #e8eaed; stroke-width: 1; }
+      .bullet-grey { fill: #80868b; }
+      .bullet-blue { fill: #1a73e8; }
+      @media (prefers-color-scheme: dark) {
+        .card { fill: #1a1c21; stroke: #2d3135; }
+        .card-white { fill: #121316; stroke: #2d3135; }
+        .chip { fill: #121316; stroke: #2d3135; }
+        .btn-primary { fill: #8ab4f8; }
+        .btn-primary-text { fill: #121316; }
+        .btn-secondary { fill: #1a1c21; stroke: #3c4043; }
+        .btn-secondary-text { fill: #e8eaed; }
+        .eyebrow, .h3, .mono-blue, .link { fill: #8ab4f8; }
+        .h1, .h2, .h4, .job-title, .text-dark, .text-bold { fill: #e8eaed; }
+        .body, .body-sm, .body-xs, .mono-time { fill: #9aa0a6; }
+        .faint { fill: #80868b; }
+        .green-text { fill: #81c995; }
+        .green-circle { fill: #173323; }
+        .green-stroke { stroke: #81c995; }
+        .blue-box { fill: #1b283f; }
+        .divider { stroke: #2d3135; }
+        .bullet-blue { fill: #8ab4f8; }
+      }
+    </style>
+  </defs>
+
+  <line x1="24" y1="8" x2="1056" y2="8" class="divider" />
+
+  <!-- Availability Card -->
+  <rect x="24" y="36" width="1032" height="290" rx="16" class="card" />
+
+  <circle cx="68" cy="76" r="4" fill="#188038" />
+  <text x="82" y="80" class="green-text">Open to opportunities &amp; Master’s programs</text>
+
+  <text x="64" y="122" class="h2">Ready to build reliable <tspan fill="#1a73e8">cloud platforms</tspan> anywhere.</text>
+
+  <text x="64" y="158" class="body">Open to sponsorship, relocation, and remote opportunities across</text>
+  <text x="64" y="180" class="body">Cloud Engineering, DevOps, Platform Engineering, and SRE — as well</text>
+  <text x="64" y="202" class="body">as Master’s in Computer Science / Information Technology programs.</text>
+
+  <rect x="64" y="232" width="148" height="42" rx="21" class="btn-primary" />
+  <text x="138" y="258" text-anchor="middle" class="btn-primary-text">Let's connect ↗</text>
+
+  <rect x="224" y="232" width="154" height="42" rx="21" class="btn-secondary" />
+  <text x="301" y="258" text-anchor="middle" class="btn-secondary-text">View experience</text>
+
+  <!-- Vertical Divider inside Availability Card -->
+  <line x1="590" y1="68" x2="590" y2="294" class="divider" />
+
+  <!-- Detail Item 1 -->
+  <rect x="626" y="68" width="38" height="38" rx="10" class="blue-box" />
+  <text x="645" y="92" text-anchor="middle" class="mono-blue">4+</text>
+  <text x="678" y="84" class="text-bold">4+ years (Feb 2023 – Present)</text>
+  <text x="678" y="102" class="body-xs">Production Cloud &amp; Kubernetes at Ericsson</text>
+
+  <!-- Detail Item 2 -->
+  <rect x="626" y="122" width="38" height="38" rx="10" class="blue-box" />
+  <text x="645" y="146" text-anchor="middle" class="mono-blue">GCP</text>
+  <text x="678" y="138" class="text-bold">Google Cloud Certified</text>
+  <text x="678" y="156" class="link">Professional Cloud Architect ↗</text>
+
+  <!-- Detail Item 3 -->
+  <rect x="626" y="176" width="38" height="38" rx="10" class="blue-box" />
+  <text x="645" y="200" text-anchor="middle" class="mono-blue">EN</text>
+  <text x="678" y="192" class="text-bold">IELTS Overall 7.0 (Sept 30, 2025)</text>
+  <text x="678" y="210" class="body-xs">C1 · Proficient English</text>
+
+  <line x1="626" y1="232" x2="1016" y2="232" class="divider" />
+  <text x="626" y="254" class="faint">Open to</text>
+  <text x="626" y="278" class="text-bold">United States  ·  European Union  ·  Australia  ·  Remote Worldwide</text>
+
+  <!-- Contact Section Header -->
+  <line x1="24" y1="360" x2="1056" y2="360" class="divider" />
+  <text x="24" y="400" class="eyebrow">Get in Touch</text>
+  <text x="24" y="436" class="h2">Contact &amp; Verified Profiles</text>
+
+  <!-- 6 Contact Cards in 3x2 Grid -->
+  <rect x="24" y="462" width="332" height="68" rx="12" class="card" />
+  <text x="44" y="488" class="faint">Email</text>
+  <text x="44" y="512" class="text-bold">impradeepkumargupta@gmail.com ↗</text>
+
+  <rect x="374" y="462" width="332" height="68" rx="12" class="card" />
+  <text x="394" y="488" class="faint">Mobile (India)</text>
+  <text x="394" y="512" class="text-bold">+91 8604932809 ↗</text>
+
+  <rect x="724" y="462" width="332" height="68" rx="12" class="card" />
+  <text x="744" y="488" class="faint">LinkedIn</text>
+  <text x="744" y="512" class="text-bold">linkedin.com/in/impradeepkumargupta ↗</text>
+
+  <rect x="24" y="544" width="332" height="68" rx="12" class="card" />
+  <text x="44" y="570" class="faint">GitHub</text>
+  <text x="44" y="594" class="text-bold">github.com/impradeepkumargupta ↗</text>
+
+  <rect x="374" y="544" width="332" height="68" rx="12" class="card" />
+  <text x="394" y="570" class="faint">Portfolio</text>
+  <text x="394" y="594" class="text-bold">impradeepkumargupta.github.io ↗</text>
+
+  <rect x="724" y="544" width="332" height="68" rx="12" class="card" />
+  <text x="744" y="570" class="faint">Instagram</text>
+  <text x="744" y="594" class="text-bold">instagram.com/pradeepgupta____ ↗</text>
+</svg>

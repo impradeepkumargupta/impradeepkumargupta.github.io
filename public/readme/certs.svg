@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 548" width="100%">
+  
+  <defs>
+    <style>
+      .card { fill: #f8f9fa; stroke: #e8eaed; stroke-width: 1; }
+      .card-white { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .chip { fill: #ffffff; stroke: #e8eaed; stroke-width: 1; }
+      .btn-primary { fill: #1a73e8; }
+      .btn-primary-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .btn-secondary { fill: #ffffff; stroke: #dadce0; stroke-width: 1; }
+      .btn-secondary-text { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .eyebrow { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+      .h1 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.8px; }
+      .h2 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.4px; }
+      .h3 { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.4px; }
+      .h4 { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15.5px; font-weight: 700; }
+      .job-title { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .body { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; }
+      .body-sm { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; }
+      .body-xs { fill: #5f6368; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12.5px; }
+      .text-dark { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; }
+      .text-bold { fill: #202124; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .faint { fill: #80868b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; }
+      .mono-blue { fill: #1a73e8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 700; }
+      .mono-time { fill: #5f6368; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; }
+      .link { fill: #1a73e8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+      .green-text { fill: #188038; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .green-circle { fill: #e6f4ea; }
+      .green-stroke { stroke: #188038; }
+      .blue-box { fill: #e8f0fe; }
+      .divider { stroke: #e8eaed; stroke-width: 1; }
+      .bullet-grey { fill: #80868b; }
+      .bullet-blue { fill: #1a73e8; }
+      @media (prefers-color-scheme: dark) {
+        .card { fill: #1a1c21; stroke: #2d3135; }
+        .card-white { fill: #121316; stroke: #2d3135; }
+        .chip { fill: #121316; stroke: #2d3135; }
+        .btn-primary { fill: #8ab4f8; }
+        .btn-primary-text { fill: #121316; }
+        .btn-secondary { fill: #1a1c21; stroke: #3c4043; }
+        .btn-secondary-text { fill: #e8eaed; }
+        .eyebrow, .h3, .mono-blue, .link { fill: #8ab4f8; }
+        .h1, .h2, .h4, .job-title, .text-dark, .text-bold { fill: #e8eaed; }
+        .body, .body-sm, .body-xs, .mono-time { fill: #9aa0a6; }
+        .faint { fill: #80868b; }
+        .green-text { fill: #81c995; }
+        .green-circle { fill: #173323; }
+        .green-stroke { stroke: #81c995; }
+        .blue-box { fill: #1b283f; }
+        .divider { stroke: #2d3135; }
+        .bullet-blue { fill: #8ab4f8; }
+      }
+    </style>
+  </defs>
+
+  <line x1="24" y1="8" x2="1056" y2="8" class="divider" />
+  <text x="24" y="48" class="eyebrow">Credentials</text>
+  <text x="24" y="84" class="h2">Certifications &amp; Language Proficiency</text>
+  
+    <rect x="24" y="112" width="509" height="94" rx="12" class="card" />
+    <circle cx="58" cy="146" r="16" class="green-circle" />
+    <path d="M65 141 L56 150 L51 145" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="88" y="145" class="text-bold">Google Cloud — Professional Cloud Architect</text>
+    <text x="88" y="165" class="body-xs">Google · Issued Dec 2025 · Expires Dec 2027</text>
+    <text x="88" y="187" class="link">Verify on Credly →</text>
+  
+    <rect x="547" y="112" width="509" height="94" rx="12" class="card" />
+    <circle cx="581" cy="146" r="16" class="green-circle" />
+    <path d="M588 141 L579 150 L574 145" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="611" y="145" class="text-bold">Cloud Architecture: Design, Implement, and Manage</text>
+    <text x="611" y="165" class="body-xs">Google Cloud Skill Badge · Issued Jul 2025</text>
+    <text x="611" y="187" class="link">View credential on LinkedIn →</text>
+  
+    <rect x="24" y="220" width="509" height="94" rx="12" class="card" />
+    <circle cx="58" cy="254" r="16" class="green-circle" />
+    <path d="M65 249 L56 258 L51 253" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="88" y="253" class="text-bold">Build Infrastructure with Terraform on Google Cloud</text>
+    <text x="88" y="273" class="body-xs">Google Cloud Skill Badge · Issued Aug 2024</text>
+    <text x="88" y="295" class="link">View credential on LinkedIn →</text>
+  
+    <rect x="547" y="220" width="509" height="94" rx="12" class="card" />
+    <circle cx="581" cy="254" r="16" class="green-circle" />
+    <path d="M588 249 L579 258 L574 253" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="611" y="253" class="text-bold">Monitor and Log with Google Cloud Operations Suite</text>
+    <text x="611" y="273" class="body-xs">Google Cloud Skill Badge · Issued Oct 2025</text>
+    <text x="611" y="295" class="link">View credential on LinkedIn →</text>
+  
+    <rect x="24" y="328" width="509" height="94" rx="12" class="card" />
+    <circle cx="58" cy="362" r="16" class="green-circle" />
+    <path d="M65 357 L56 366 L51 361" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="88" y="361" class="text-bold">LFS169: Introduction to GitOps</text>
+    <text x="88" y="381" class="body-xs">The Linux Foundation · Issued May 2025</text>
+    <text x="88" y="403" class="link">View credential on LinkedIn →</text>
+  
+    <rect x="547" y="328" width="509" height="94" rx="12" class="card" />
+    <circle cx="581" cy="362" r="16" class="green-circle" />
+    <path d="M588 357 L579 366 L574 361" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="611" y="361" class="text-bold">BCSS Automation Fundamental Level</text>
+    <text x="611" y="381" class="body-xs">Ericsson · Issued Sep 2024</text>
+    <text x="611" y="403" class="link">View credential on LinkedIn →</text>
+  
+    <rect x="24" y="436" width="509" height="94" rx="12" class="card" />
+    <circle cx="58" cy="470" r="16" class="green-circle" />
+    <path d="M65 465 L56 474 L51 469" fill="none" class="green-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="88" y="469" class="text-bold">IELTS Academic — Overall Score: 7.0 (C1)</text>
+    <text x="88" y="489" class="body-xs">IDP Education · Issued Sept 30, 2025</text>
+    
+  
+</svg>

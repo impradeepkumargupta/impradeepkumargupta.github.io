@@ -851,13 +851,7 @@ export default function App() {
             <div className="edu-item">
               <h4>Higher Secondary (+2, Science)</h4>
               <div className="school">
-                <a
-                  href="https://tilottama.edu.np"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tilottama Higher Secondary School, Butwal, Nepal ↗
-                </a>
+                Tilottama Higher Secondary School, Butwal, Nepal
               </div>
               <div className="meta">
                 <span>
