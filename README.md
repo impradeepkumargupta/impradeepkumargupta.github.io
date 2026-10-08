@@ -31,14 +31,6 @@
   </a>
 
   <br />
-  <p>
-    <a href="mailto:impradeepkumargupta@gmail.com">Email</a> ·
-    <a href="tel:+918604932809">+91 8604932809</a> ·
-    <a href="https://linkedin.com/in/impradeepkumargupta">LinkedIn</a> ·
-    <a href="https://github.com/impradeepkumargupta">GitHub</a> ·
-    <a href="https://impradeepkumargupta.github.io/">Portfolio</a> ·
-    <a href="https://instagram.com/pradeepgupta____">Instagram</a>
-  </p>
   <sub>© 2026 Pradeep Kumar Gupta</sub>
 
 </div>
