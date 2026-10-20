@@ -547,101 +547,78 @@ export default function App() {
           </div>
         </section>
 
-   ```jsx
 {/* SKILLS & ARCHITECTURE */}
 <section id="skills">
   <div className="sec-head">
     <div className="sec-label">Tech Stack</div>
     <h2>Cloud &amp; Platform Engineering</h2>
     <p className="sec-desc">
-      Technologies and engineering practices I use to build, automate,
-      deploy, monitor and operate reliable cloud-native infrastructure.
+      Technologies I use to build, automate and operate cloud infrastructure.
     </p>
   </div>
 
   <div className="skill-grid">
     <div className="skill-card">
-      <h3>Cloud Infrastructure</h3>
+      <h3>Cloud &amp; Infrastructure</h3>
       <ul className="skill-list">
-        <li>Google Cloud Platform (GCP)</li>
-        <li>Compute Engine, GKE, Cloud SQL &amp; Cloud Storage</li>
-        <li>IAM, VPC, Cloud Monitoring &amp; Cloud Logging</li>
-        <li>AWS — EC2, S3 &amp; IAM</li>
+        <li>GCP: GKE, Compute Engine, Cloud SQL</li>
+        <li>Cloud Storage, IAM &amp; VPC</li>
+        <li>AWS: EC2, S3 &amp; IAM</li>
+        <li>Linux: RHEL &amp; Ubuntu</li>
       </ul>
     </div>
 
     <div className="skill-card">
       <h3>Kubernetes &amp; Containers</h3>
       <ul className="skill-list">
-        <li>Kubernetes — GKE Standard &amp; Autopilot</li>
-        <li>Docker, Docker Compose &amp; Docker Swarm</li>
-        <li>Helm Charts &amp; Containerd</li>
-        <li>Deployments, Services, Ingress &amp; Autoscaling</li>
+        <li>Kubernetes: GKE Standard &amp; Autopilot</li>
+        <li>Docker, Compose &amp; Swarm</li>
+        <li>Helm, Containerd &amp; Ingress</li>
+        <li>Deployments &amp; Autoscaling</li>
       </ul>
     </div>
 
     <div className="skill-card">
-      <h3>Infrastructure as Code</h3>
+      <h3>IaC &amp; Automation</h3>
       <ul className="skill-list">
-        <li>Terraform — Modules &amp; Remote State</li>
+        <li>Terraform: Modules &amp; Remote State</li>
         <li>Ansible Configuration Management</li>
-        <li>Version-Controlled Infrastructure</li>
-        <li>Reusable Infrastructure Automation</li>
+        <li>Python &amp; Bash Scripting</li>
+        <li>Infrastructure Automation</li>
       </ul>
     </div>
 
     <div className="skill-card">
       <h3>CI/CD &amp; GitOps</h3>
       <ul className="skill-list">
-        <li>Cloud Build &amp; Cloud Deploy</li>
-        <li>GitHub Actions &amp; Jenkins</li>
-        <li>Git, GitOps &amp; Argo CD</li>
-        <li>Artifact Registry, Artifactory &amp; Automated Delivery</li>
+        <li>Cloud Build, Cloud Deploy &amp; Jenkins</li>
+        <li>GitHub Actions &amp; Argo CD</li>
+        <li>Git &amp; Version Control</li>
+        <li>Artifact Registry &amp; Artifactory</li>
       </ul>
     </div>
 
     <div className="skill-card">
       <h3>Observability &amp; Reliability</h3>
       <ul className="skill-list">
-        <li>Elasticsearch, Logstash &amp; Kibana (ELK)</li>
+        <li>ELK Stack: Elasticsearch, Logstash, Kibana</li>
         <li>Grafana Dashboards &amp; Alerting</li>
         <li>Zabbix Infrastructure Monitoring</li>
-        <li>Log Analysis, Incident Troubleshooting &amp; SLOs</li>
+        <li>Logs &amp; Incident Troubleshooting</li>
       </ul>
     </div>
 
     <div className="skill-card">
-      <h3>Linux &amp; Networking</h3>
+      <h3>Networking &amp; Security</h3>
       <ul className="skill-list">
-        <li>RHEL &amp; Ubuntu Administration</li>
         <li>TCP/IP, DNS, HTTP &amp; Routing</li>
-        <li>VPC Networking, Load Balancing &amp; Firewalls</li>
-        <li>Filesystems, Storage &amp; System Troubleshooting</li>
-      </ul>
-    </div>
-
-    <div className="skill-card">
-      <h3>Automation &amp; Scripting</h3>
-      <ul className="skill-list">
-        <li>Python &amp; Bash / Shell Scripting</li>
-        <li>Operational Automation &amp; Tooling</li>
-        <li>Deployment Workflows &amp; Infrastructure Tasks</li>
-        <li>Monitoring-Driven Troubleshooting</li>
-      </ul>
-    </div>
-
-    <div className="skill-card">
-      <h3>Security &amp; Data Services</h3>
-      <ul className="skill-list">
+        <li>VPC, Load Balancing &amp; Firewalls</li>
         <li>IAM &amp; Least-Privilege Access</li>
-        <li>Cloud Security &amp; DevSecOps Practices</li>
         <li>MySQL &amp; PostgreSQL Operations</li>
-        <li>Cloud Functions, Pub/Sub &amp; BigQuery</li>
       </ul>
     </div>
   </div>
 </section>
-```
 
         {/* CERTIFICATIONS */}
         <section id="certs">
