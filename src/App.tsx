@@ -703,15 +703,6 @@ export default function App() {
               <div>
                 <h4>Cloud Architecture: Design, Implement, and Manage</h4>
                 <div className="issuer">Google Cloud Skill Badge · Issued Jul 2025</div>
-                <div className="link-row">
-                  <a
-                    href="https://linkedin.com/in/impradeepkumargupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View credential on LinkedIn →
-                  </a>
-                </div>
               </div>
             </div>
             <div className="cert">
@@ -723,15 +714,6 @@ export default function App() {
               <div>
                 <h4>Build Infrastructure with Terraform on Google Cloud</h4>
                 <div className="issuer">Google Cloud Skill Badge · Issued Aug 2024</div>
-                <div className="link-row">
-                  <a
-                    href="https://linkedin.com/in/impradeepkumargupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View credential on LinkedIn →
-                  </a>
-                </div>
               </div>
             </div>
             <div className="cert">
@@ -743,15 +725,6 @@ export default function App() {
               <div>
                 <h4>Monitor and Log with Google Cloud Operations Suite</h4>
                 <div className="issuer">Google Cloud Skill Badge · Issued Oct 2025</div>
-                <div className="link-row">
-                  <a
-                    href="https://linkedin.com/in/impradeepkumargupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View credential on LinkedIn →
-                  </a>
-                </div>
               </div>
             </div>
             <div className="cert">
@@ -763,15 +736,6 @@ export default function App() {
               <div>
                 <h4>LFS169: Introduction to GitOps</h4>
                 <div className="issuer">The Linux Foundation · Issued May 2025</div>
-                <div className="link-row">
-                  <a
-                    href="https://linkedin.com/in/impradeepkumargupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View credential on LinkedIn →
-                  </a>
-                </div>
               </div>
             </div>
             <div className="cert">
@@ -783,15 +747,6 @@ export default function App() {
               <div>
                 <h4>BCSS Automation Fundamental Level</h4>
                 <div className="issuer">Ericsson · Issued Sep 2024</div>
-                <div className="link-row">
-                  <a
-                    href="https://linkedin.com/in/impradeepkumargupta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View credential on LinkedIn →
-                  </a>
-                </div>
               </div>
             </div>
             <div className="cert">
