@@ -538,134 +538,110 @@ export default function App() {
               <span className="chip">Terraform</span>
               <span className="chip">Docker &amp; Kubernetes (GKE)</span>
               <span className="chip">Cloud Build · Artifactory · Cloud Deploy</span>
-              <span className="chip">Git &amp; GitHub Actions</span>
+              <span className="chip">Git and GitHub Actions</span>
               <span className="chip">ELK Stack (Elastic, Logstash, Kibana)</span>
-              <span className="chip">Grafana</span>
-              <span className="chip">Zabbix</span>
-              <span className="chip">Python &amp; Bash</span>
-              <span className="chip">Linux Systems Administration (RHEL)</span>
-              <span className="chip">Networking</span>
+              <span className="chip">Grafana and Zabbix</span>
+              <span className="chip">Python and Bash Scripting</span>
+              <span className="chip">Linux Systems Administration (RHEL) and Networking</span>
             </div>
           </div>
         </section>
 
-        {/* SKILLS & ARCHITECTURE */}
-        <section id="skills">
-          <div className="sec-head">
-            <div className="sec-label">Tech Stack</div>
-            <h2>Cloud &amp; Platform Engineering</h2>
-            <p className="sec-desc">
-              Infrastructure, automation and platform technologies I use to build, deploy and
-              operate cloud-native systems.
-            </p>
-          </div>
+   ```jsx
+{/* SKILLS & ARCHITECTURE */}
+<section id="skills">
+  <div className="sec-head">
+    <div className="sec-label">Tech Stack</div>
+    <h2>Cloud &amp; Platform Engineering</h2>
+    <p className="sec-desc">
+      Technologies and engineering practices I use to build, automate,
+      deploy, monitor and operate reliable cloud-native infrastructure.
+    </p>
+  </div>
 
-          <div className="pipeline-grid">
-            <div className="pstep">
-              <div className="num">01</div>
-              <h4>Linux &amp; Networking</h4>
-              <p>RHEL systems administration, TCP/IP, DNS, HTTP, routing, filesystems and troubleshooting.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">02</div>
-              <h4>Google Cloud &amp; AWS</h4>
-              <p>GCP (Compute Engine, GKE, Cloud SQL, IAM, Storage), cloud networking and AWS.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">03</div>
-              <h4>Docker &amp; Containers</h4>
-              <p>Containerization, images, Artifact Registry / Artifactory, Compose and Docker Swarm.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">04</div>
-              <h4>Kubernetes / GKE</h4>
-              <p>Production workloads, deployments, services, autoscaling and cluster reliability.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">05</div>
-              <h4>Terraform (IaC)</h4>
-              <p>Infrastructure as Code, reusable modules and version-controlled cloud provisioning.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">06</div>
-              <h4>CI/CD &amp; GCP DevOps</h4>
-              <p>Cloud Build, Artifactory, Cloud Deploy, GitHub Actions, and GitOps delivery pipelines.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">07</div>
-              <h4>Automation &amp; Observability</h4>
-              <p>Python, Bash, ELK (Elastic, Logstash, Kibana), Grafana, Zabbix and incident analysis.</p>
-            </div>
-            <div className="pstep">
-              <div className="num">08</div>
-              <h4>Platform Engineering</h4>
-              <p>Scalable, reliable and self-service cloud infrastructure for engineering teams.</p>
-            </div>
-          </div>
+  <div className="skill-grid">
+    <div className="skill-card">
+      <h3>Cloud Infrastructure</h3>
+      <ul className="skill-list">
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Compute Engine, GKE, Cloud SQL &amp; Cloud Storage</li>
+        <li>IAM, VPC, Cloud Monitoring &amp; Cloud Logging</li>
+        <li>AWS — EC2, S3 &amp; IAM</li>
+      </ul>
+    </div>
 
-          <div className="sec-head" style={{ marginTop: '48px' }}>
-            <div className="sec-label">Technical Domains</div>
-            <h2>Core Proficiencies</h2>
-          </div>
-          <div className="skill-grid">
-            <div className="skill-card">
-              <h3>Cloud &amp; Platform</h3>
-              <ul className="skill-list">
-                <li>Google Cloud Platform (GCP) — GKE, Compute Engine, Cloud SQL, Cloud Storage</li>
-                <li>Pub/Sub, BigQuery, Cloud Functions</li>
-                <li>Cloud Monitoring, Cloud Logging, IAM</li>
-                <li>
-                  AWS <span className="note">(EC2, S3, IAM)</span>
-                </li>
-              </ul>
-            </div>
-            <div className="skill-card">
-              <h3>Containers &amp; Orchestration</h3>
-              <ul className="skill-list">
-                <li>Kubernetes (GKE Standard &amp; Autopilot)</li>
-                <li>Docker, Docker Swarm, Docker Compose</li>
-                <li>Helm Charts &amp; Release Packaging</li>
-                <li>Containerd &amp; Ingress-NGINX Controllers</li>
-              </ul>
-            </div>
-            <div className="skill-card">
-              <h3>IaC &amp; Automation</h3>
-              <ul className="skill-list">
-                <li>Terraform (Modules &amp; Remote State)</li>
-                <li>Ansible Configuration Management</li>
-                <li>GitOps Architecture &amp; Workflows</li>
-                <li>Python, Bash / Shell Scripting</li>
-              </ul>
-            </div>
-            <div className="skill-card">
-              <h3>CI / CD &amp; GCP DevOps</h3>
-              <ul className="skill-list">
-                <li>GCP DevOps — Cloud Build, Artifactory &amp; Cloud Deploy</li>
-                <li>GitHub Actions &amp; Workflow Automation</li>
-                <li>Git &amp; Trunk-Based Collaboration</li>
-                <li>ArgoCD &amp; Automated Build, Test &amp; Deployment Pipelines</li>
-              </ul>
-            </div>
-            <div className="skill-card">
-              <h3>Observability &amp; Monitoring</h3>
-              <ul className="skill-list">
-                <li>ELK Stack (Elasticsearch / Elastic, Logstash, Kibana)</li>
-                <li>Grafana Dashboards &amp; Alerting</li>
-                <li>Zabbix Infrastructure Monitoring</li>
-                <li>Google Cloud Operations Suite &amp; SLOs</li>
-              </ul>
-            </div>
-            <div className="skill-card">
-              <h3>Systems &amp; Security</h3>
-              <ul className="skill-list">
-                <li>Linux Systems Administration (RHEL / Ubuntu)</li>
-                <li>Cloud Networking, VPC, DNS &amp; Load Balancing</li>
-                <li>DevSecOps &amp; Least-Privilege IAM Policies</li>
-                <li>MySQL &amp; PostgreSQL Operations</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+    <div className="skill-card">
+      <h3>Kubernetes &amp; Containers</h3>
+      <ul className="skill-list">
+        <li>Kubernetes — GKE Standard &amp; Autopilot</li>
+        <li>Docker, Docker Compose &amp; Docker Swarm</li>
+        <li>Helm Charts &amp; Containerd</li>
+        <li>Deployments, Services, Ingress &amp; Autoscaling</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>Infrastructure as Code</h3>
+      <ul className="skill-list">
+        <li>Terraform — Modules &amp; Remote State</li>
+        <li>Ansible Configuration Management</li>
+        <li>Version-Controlled Infrastructure</li>
+        <li>Reusable Infrastructure Automation</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>CI/CD &amp; GitOps</h3>
+      <ul className="skill-list">
+        <li>Cloud Build &amp; Cloud Deploy</li>
+        <li>GitHub Actions &amp; Jenkins</li>
+        <li>Git, GitOps &amp; Argo CD</li>
+        <li>Artifact Registry, Artifactory &amp; Automated Delivery</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>Observability &amp; Reliability</h3>
+      <ul className="skill-list">
+        <li>Elasticsearch, Logstash &amp; Kibana (ELK)</li>
+        <li>Grafana Dashboards &amp; Alerting</li>
+        <li>Zabbix Infrastructure Monitoring</li>
+        <li>Log Analysis, Incident Troubleshooting &amp; SLOs</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>Linux &amp; Networking</h3>
+      <ul className="skill-list">
+        <li>RHEL &amp; Ubuntu Administration</li>
+        <li>TCP/IP, DNS, HTTP &amp; Routing</li>
+        <li>VPC Networking, Load Balancing &amp; Firewalls</li>
+        <li>Filesystems, Storage &amp; System Troubleshooting</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>Automation &amp; Scripting</h3>
+      <ul className="skill-list">
+        <li>Python &amp; Bash / Shell Scripting</li>
+        <li>Operational Automation &amp; Tooling</li>
+        <li>Deployment Workflows &amp; Infrastructure Tasks</li>
+        <li>Monitoring-Driven Troubleshooting</li>
+      </ul>
+    </div>
+
+    <div className="skill-card">
+      <h3>Security &amp; Data Services</h3>
+      <ul className="skill-list">
+        <li>IAM &amp; Least-Privilege Access</li>
+        <li>Cloud Security &amp; DevSecOps Practices</li>
+        <li>MySQL &amp; PostgreSQL Operations</li>
+        <li>Cloud Functions, Pub/Sub &amp; BigQuery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+```
 
         {/* CERTIFICATIONS */}
         <section id="certs">
