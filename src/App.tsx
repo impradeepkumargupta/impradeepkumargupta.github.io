@@ -1033,14 +1033,6 @@ export default function App() {
                 </a>
                 <a
                   className="contact-card"
-                  href="tel:+918604932809"
-                  id="contact-card-phone"
-                >
-                  <span className="label">Mobile (India)</span>
-                  <span className="val">+91 8604932809 ↗</span>
-                </a>
-                <a
-                  className="contact-card"
                   href="https://linkedin.com/in/impradeepkumargupta"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1058,16 +1050,6 @@ export default function App() {
                 >
                   <span className="label">GitHub</span>
                   <span className="val">github.com/impradeepkumargupta ↗</span>
-                </a>
-                <a
-                  className="contact-card"
-                  href="https://impradeepkumargupta.github.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="contact-card-portfolio"
-                >
-                  <span className="label">Portfolio</span>
-                  <span className="val">impradeepkumargupta.github.io ↗</span>
                 </a>
                 <a
                   className="contact-card"
