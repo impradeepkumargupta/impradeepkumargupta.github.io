@@ -486,7 +486,7 @@ export default function App() {
                   >
                     Ericsson
                   </a>{' '}
-                  — Gurugram, India · 4+ years experience
+                  — Delhi, India · 4+ years experience
                 </div>
               </div>
               <div className="job-time">Feb 2023 — Present</div>
@@ -654,17 +654,6 @@ export default function App() {
                 </svg>
               </div>
               <div>
-                <h4>Cloud Architecture: Design, Implement, and Manage</h4>
-                <div className="issuer">Google Cloud Skill Badge · Issued Jul 2025</div>
-              </div>
-            </div>
-            <div className="cert">
-              <div className="mark">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              </div>
-              <div>
                 <h4>Build Infrastructure with Terraform on Google Cloud</h4>
                 <div className="issuer">Google Cloud Skill Badge · Issued Aug 2024</div>
               </div>
@@ -676,30 +665,8 @@ export default function App() {
                 </svg>
               </div>
               <div>
-                <h4>Monitor and Log with Google Cloud Operations Suite</h4>
-                <div className="issuer">Google Cloud Skill Badge · Issued Oct 2025</div>
-              </div>
-            </div>
-            <div className="cert">
-              <div className="mark">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              </div>
-              <div>
                 <h4>LFS169: Introduction to GitOps</h4>
                 <div className="issuer">The Linux Foundation · Issued May 2025</div>
-              </div>
-            </div>
-            <div className="cert">
-              <div className="mark">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              </div>
-              <div>
-                <h4>BCSS Automation Fundamental Level</h4>
-                <div className="issuer">Ericsson · Issued Sep 2024</div>
               </div>
             </div>
             <div className="cert">
@@ -727,20 +694,17 @@ export default function App() {
               <h4>Bachelor of Technology (B.Tech) in Computer Science and Engineering</h4>
               <div className="school">
                 <a
-                  href="https://vit.ac.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India ↗
+                  Vellore Institute of Technology (VIT), Vellore, Tamil Nadu, India 
                 </a>
               </div>
               <div className="meta">
                 <span>
-                  <strong>Duration:</strong> 2019 — 2023
+                  <h4>Duration: 2019 — 2023</h4>
                 </span>
                 <span>·</span>
                 <span>
-                  <strong>CGPA:</strong> 7.92 / 10
+                  <sh4>CGPA: 7.92 / 10</h4>
                 </span>
               </div>
               <div className="meta">
@@ -763,11 +727,11 @@ export default function App() {
               </div>
               <div className="meta">
                 <span>
-                  <strong>Duration:</strong> 2017 — 2019
+                  <h4>Duration: 2017 — 2019</h4>
                 </span>
                 <span>·</span>
                 <span>
-                  <strong>CGPA:</strong> 3.61 / 4.00
+                  <h4>CGPA: 3.61 / 4.00</h4>
                 </span>
               </div>
               <div className="meta">
@@ -775,17 +739,17 @@ export default function App() {
               </div>
 
               <div className="edu-subblock">
-                <h4>Secondary School (10th)</h4>
+                <h4>Secondary School</h4>
                 <div className="school">
                   Lord Gautam Buddha English Boarding High School, Thutipipal, Nepal
                 </div>
                 <div className="meta">
                   <span>
-                    <strong>Passout:</strong> 2017
+                    <h4>Passout: 2017</h4>
                   </span>
                   <span>·</span>
                   <span>
-                    <strong>CGPA:</strong> 3.75 / 4.00
+                    <h4>CGPA: 3.75 / 4.00</h4>
                   </span>
                 </div>
               </div>
@@ -838,7 +802,7 @@ export default function App() {
             <div className="availability-main">
               <div className="availability-badge">
                 <span className="status-dot"></span>
-                Open to opportunities &amp; Master’s programs
+                Open to New opportunities
               </div>
 
               <h2>
@@ -846,9 +810,8 @@ export default function App() {
               </h2>
 
               <p className="availability-description">
-                Open to sponsorship, relocation, and remote opportunities across Cloud Engineering,
-                DevOps, Platform Engineering, and SRE — as well as Master’s in Computer Science /
-                Information Technology programs.
+                Open to visa-sponsored relocation and remote opportunities in Cloud DevOps,
+  Platform, and Site Reliability Engineering (SRE).
               </p>
 
               <div className="availability-actions">
@@ -868,7 +831,7 @@ export default function App() {
                 <div className="detail-icon">4+</div>
                 <div>
                   <strong>4+ years (Feb 2023 – Present)</strong>
-                  <span>Production Cloud &amp; Kubernetes at Ericsson</span>
+                  <span>Production Cloud Platform and Kubernetes</span>
                 </div>
               </div>
 
